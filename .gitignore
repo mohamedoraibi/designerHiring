@@ -1,8 +1,3 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/laravel
-# Edit at https://www.toptal.com/developers/gitignore?templates=laravel
-
-### Laravel ###
 /vendor/
 node_modules/
 npm-debug.log
@@ -26,9 +21,3 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
-
-# Laravel IDE helper
-*.meta.*
-_ide_*
-
-# End of https://www.toptal.com/developers/gitignore/api/laravel
