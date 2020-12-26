@@ -43,6 +43,8 @@ class UserController extends Controller
             $data['is_project_owner'] = 1;
         else
             $data['is_project_owner'] = 0;
+//        dd($data);
+
         User::create($data);
 
         return view('index')->with('success', 'User created successfully.');

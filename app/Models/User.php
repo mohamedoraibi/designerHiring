@@ -32,6 +32,8 @@ class User extends Authenticatable
         'bio',
         'visitor',
         'device',
+        'is_designer',
+        'is_project_owner',
         'last_active_at',
         'last_login_ip',
         'password',

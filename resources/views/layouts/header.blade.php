@@ -26,13 +26,18 @@
                 <img alt="search icon" src="{{ asset('images/search.svg') }}" onclick="openSearch()" height="28"
                      width="28" id="search"
                      style="margin-top:4px; cursor: pointer;"/>
-                <li class="nav-item px-3">
-                    <a class="nav-link nav-text-color" aria-current="page" href="#" data-bs-toggle="modal"
-                       data-bs-target="#loginForm">Login</a>
-                </li>
-                <li class="nav-item px-3">
-                    <a class="nav-link nav-text-color btn1" aria-current="page" href="/register">Register</a>
-                </li>
+                @guest
+                    <li class="nav-item px-3">
+                        <a class="nav-link nav-text-color" aria-current="page" href="#" data-bs-toggle="modal"
+                           data-bs-target="#loginForm">Login</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link nav-text-color btn1" aria-current="page" href="/register">Register</a>
+                    </li>
+                @endguest
+                @auth
+                    <li class="nav-text-color">{{ Auth::user()->name }} <a href="{{ url("logout") }}">logout</a></li>
+                @endauth
             </ul>
         </div>
     </div>
