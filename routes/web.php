@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,15 @@ Route::get('/', function () {
     return view('index');
 });
 
+
+//Route::get('/register', function () {
+//    return view('authNew.register');
+//});
+Route::get('/register', [UserController::class, 'create']);
+Route::post('/register/add', [UserController::class, 'store'])->name('register');
+
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
