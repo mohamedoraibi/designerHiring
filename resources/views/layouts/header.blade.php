@@ -13,7 +13,8 @@
                     <a class="nav-link nav-text-color" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link nav-text-color" aria-current="page" href="add-project.html">+Add Project</a>
+                    <a class="nav-link nav-text-color" aria-current="page" href="{{url("/project/new")}}">+Add
+                        Project</a>
                 </li>
                 <li class="nav-item px-3">
                     <a class="nav-link nav-text-color" aria-current="page" href="#">Contact Us</a>
