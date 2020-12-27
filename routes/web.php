@@ -22,6 +22,7 @@ Route::get('/', function () {
 //Route::get('/register', function () {
 //    return view('authNew.register');
 //});
+Route::get('/users', [UserController::class, 'index']);
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/register/add', [UserController::class, 'store'])->name('register');
 

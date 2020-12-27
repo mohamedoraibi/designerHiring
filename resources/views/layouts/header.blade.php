@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg" style="background-color:#2b2b2b;">
     <div class="container-fluid mx-5">
-        <a class="navbar-brand nav-text-color" href="/">مصممين اونلاين</a>
+        <a class="navbar-brand nav-text-color" href="/">DesignChi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -36,7 +36,33 @@
                     </li>
                 @endguest
                 @auth
-                    <li class="nav-text-color">{{ Auth::user()->name }} <a href="{{ url("logout") }}">logout</a></li>
+                    <div class="dropdown" style="margin: 0 10px">
+                        <button class="btn btn-secondary dropdown-toggle" style="color: black;background: #cfb48d"
+                                type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ Auth::user()->name }}
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <p style="margin:5px 0 0 10px">Login as <br><b>{{ Auth::user()->name }}</b></p>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Setting</a>
+                            <form id="logout-form" action="{{ url('logout') }}" method="POST">
+                                {{ csrf_field() }}
+                                <button class="dropdown-item bg-danger text-white" type="submit">Logout</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    {{--                    <li class="nav-text-color">--}}
+                    {{--                        <form style="display: inline" method="POST"--}}
+                    {{--                              action="{{ route('logout') }}">--}}
+                    {{--                            @csrf--}}
+                    {{--                            <a class="text-yellow-50 no-underline hover:text-yellow-500"--}}
+                    {{--                               href="{{ url("logout") }}"--}}
+                    {{--                               onclick="event.preventDefault(); this.closest('form').submit();">Logout</a>--}}
+                    {{--                        </form>--}}
+                    {{--                    </li>--}}
                 @endauth
             </ul>
         </div>

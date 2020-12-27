@@ -4,8 +4,15 @@
     <list default="true" id="8d27de5d-f791-457a-a101-61392a60241c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/add-project.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/add-project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608898185068</updated>
       <workItem from="1608898186632" duration="1467000" />
-      <workItem from="1608899687090" duration="21235000" />
+      <workItem from="1608899687090" duration="33180000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1608898291807</created>
@@ -234,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609004523390</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="After login, Add Logout button with Name">
+      <created>1609005379187</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609005379187</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +260,8 @@
     <MESSAGE value="update gitignore" />
     <MESSAGE value="Add Auth, Make layout, link homepage" />
     <MESSAGE value="Link Login Frontend with Backend and DB&#10;Link Register Frontend with Backend and DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="Link Login Frontend with Backend and DB&#10;Link Register Frontend with Backend and DB" />
+    <MESSAGE value="After login, Add Logout button with Name" />
+    <option name="LAST_COMMIT_MESSAGE" value="After login, Add Logout button with Name" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -263,10 +278,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1608986061345" />
-    <state x="306" y="0" width="1048" height="824" key="CommitChangelistDialog2" timestamp="1609004522524">
+    <state x="306" y="0" width="1048" height="824" key="CommitChangelistDialog2" timestamp="1609005378535">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="306" y="0" width="1048" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609004522524" />
+    <state x="306" y="0" width="1048" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1609005378535" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1608978156607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -299,21 +314,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="11" y="30" width="1513" height="709" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608899637062" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609004526773">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609005381883">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609004526773" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608930307936">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609005381883" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609099932401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608930307936" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1609099932401" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1608987344878">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608987344878" />
-    <state x="431" y="145" key="search.everywhere.popup" timestamp="1608978069997">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609103633164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608978069997" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609103633164" />
   </component>
 </project>
