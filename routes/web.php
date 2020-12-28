@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,8 +23,13 @@ Route::get('/', function () {
 //Route::get('/register', function () {
 //    return view('authNew.register');
 //});
+Route::get('/users', [UserController::class, 'index']);
+
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/register/add', [UserController::class, 'store'])->name('register');
+
+Route::get('/project/new', [ProjectController::class, 'create']);
+Route::post('/project/add', [ProjectController::class, 'store'])->name('projectAdd');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

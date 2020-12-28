@@ -11,6 +11,8 @@ class UserController extends Controller
     public function index()
     {
         $User = User::get();
+//        dd($User);
+        return response($User);
         return view('authNew.register', compact('User'));
     }
 

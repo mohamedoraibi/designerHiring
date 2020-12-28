@@ -6,7 +6,7 @@
         <div class="welcome-text">
             <div>
                 <h1>WELCOME</h1>
-                <p>TO مصممين اونلاين</p>
+                <p>TO <b><i>DesignChi</i></b></p>
                 <hr width="150">
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
