@@ -10,17 +10,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0" style="margin-left: 5%;">
                 <li class="nav-item px-3">
-                    <a class="nav-link nav-text-color" aria-current="page" href="/">Home</a>
+                    <a class="nav-link nav-text-color" aria-current="page" href="{{url("/")}}">Home</a>
                 </li>
                 <li class="nav-item px-3">
                     <a class="nav-link nav-text-color" aria-current="page" href="{{url("/project/new")}}">+Add
                         Project</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link nav-text-color" aria-current="page" href="#">Contact Us</a>
+                    <a class="nav-link nav-text-color" aria-current="page" href="{{url("/contact-us")}}">Contact Us</a>
                 </li>
                 <li class="nav-item px-3">
-                    <a class="nav-link nav-text-color" aria-current="page" href="#">About Us</a>
+                    <a class="nav-link nav-text-color" aria-current="page" href="{{url("/about-us")}}">About Us</a>
             </ul>
 
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0" style="margin-left: auto;">
