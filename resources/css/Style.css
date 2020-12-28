@@ -184,3 +184,51 @@ input[type="date"]{
     display: flex;
     justify-content: center;
 }
+
+.profile-card {
+    background-color: #2b2b2b;
+    margin: 7% 25%;
+    border-radius: 30px;
+}
+
+.profile-right {
+    color: #cfb48d;
+}
+
+.profile-left {
+    background: rgb(99, 83, 57);
+    background: linear-gradient(90deg, rgba(99, 83, 57, 1) 0%, rgba(207, 180, 141, 1) 100%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 30rem;
+    color: black;
+}
+
+.profile-pic-col {
+    display: flex;
+    justify-content: center;
+    padding-top: 21%;
+}
+
+.profile-info-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hire-btn1 {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #2b2b2b;
+    color: #cfb48d;
+    border-radius: 30px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.hire-btn1:hover {
+    background-color: inherit;
+    color: black;
+    border: 2px solid;
+}
