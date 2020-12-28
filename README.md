@@ -15,6 +15,6 @@ Also, that give access to the designer to make bidding on project.
 - Contact us
 - Add projects
 - Add designers profile, skills, their projects
-- Bidding on Projects
+- Make a bid
 - Hire designer
 
