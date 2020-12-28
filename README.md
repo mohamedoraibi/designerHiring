@@ -2,11 +2,10 @@
 
 ## About DesignChi Platform
 
-It is a platform, that for Freelancer Designers, it allows to the designer to present their projects and skills, also the project owner can adding their project that needs for a designer to work on them.
+It is a platform for freelancer designers, it allows the designer to publish their projects and skills. Also, a project owner can publish a project he needs to a designer to work on it.
 
-The platform present a service that allowing to the project owner to can hire a designer.
 Also, that give access to the designer to make bidding on project.   
-
+   
 
 <h3>Features and Services</h3>  
 
