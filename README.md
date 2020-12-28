@@ -4,7 +4,7 @@
 
 It is a platform for freelancer designers, it allows the designer to publish their projects and skills. Also, a project owner can publish a project he needs to a designer to work on it.
 
-Also, that give access to the designer to make bidding on project.   
+Also, that give access to the designer to make a bid on project.   
    
 
 <h3>Features and Services</h3>  
@@ -15,6 +15,6 @@ Also, that give access to the designer to make bidding on project.
 - Contact us
 - Add projects
 - Add designers profile, skills, their projects
-- Make a bid
+- Bidding on Projects
 - Hire designer
 
