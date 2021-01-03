@@ -37,7 +37,30 @@
 <!-- Dashboard Container -->
     <div class="dashboard-container">
         @include('layouts.sidebarDashboard')
-        @yield('content')
+        <div class="dashboard-content-container" data-simplebar>
+            <div class="dashboard-content-inner">
+
+                <!-- Dashboard Headline -->
+                <div class="dashboard-headline">
+                    <h3>Add a Project</h3>
+
+                    <!-- Breadcrumbs -->
+                    <nav id="breadcrumbs" class="dark">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Dashboard</a></li>
+                            <li>Add a Project</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                @yield('content')
+                @include('layouts.footerDashboard')
+
+            </div>
+            <!-- Dashboard Content / End -->
+        </div>
+
     </div>
 
 </div>
