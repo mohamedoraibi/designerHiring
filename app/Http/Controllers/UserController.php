@@ -55,7 +55,7 @@ class UserController extends Controller
                 return redirect()->back()->WithErrors($errors)->withInput($request->except('password'));
             }
 
-            dd($data);
+//            dd($data);
             $newUser = User::create($data);
             auth()->login($newUser);
             return redirect('/')->with('success', 'User created successfully.');
