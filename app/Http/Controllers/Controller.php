@@ -18,7 +18,7 @@ class Controller extends BaseController
         $projects = Project::take(4)->get();
         $designers = User::where('is_designer', '=', 1)->take(4)->get();
 //        return response($designers);
-        return view('index', compact('projects', 'designers'));
+        return view('homepage.index', compact('projects', 'designers'));
 
     }
 

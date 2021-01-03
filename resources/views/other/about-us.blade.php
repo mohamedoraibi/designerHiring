@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-    @include('layouts.loginModal')
+    @include('layouts.loginAndRegisterModal')
 
 
     <!-- registration form -->

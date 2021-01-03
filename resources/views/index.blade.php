@@ -181,6 +181,6 @@
     {{--            </div>--}}
     {{--        </div>--}}
     {{--    </div>--}}
-    @include('layouts.loginModal')
+    @include('layouts.loginAndRegisterModal')
 
 @endsection

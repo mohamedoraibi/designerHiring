@@ -33,6 +33,9 @@ Route::get('/contact-us', [Controller::class, 'contactUs']);
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/register', [UserController::class, 'store'])->name('register');
 
+Route::get('/login', [UserController::class, 'loginView']);
+Route::post('/login', [UserController::class, 'authenticate'])->name('login');
+
 Route::get('/project/new', [ProjectController::class, 'create']);
 Route::post('/project/add', [ProjectController::class, 'store'])->name('projectAdd');
 
