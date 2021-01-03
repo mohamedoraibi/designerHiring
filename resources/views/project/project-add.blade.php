@@ -8,8 +8,7 @@
 @section('title')
     Add New Project
 @endsection
-{{--@section('titlebar')--}}
-{{--@endsection--}}
+
 @section('content')
 
     <!-- Dashboard Content

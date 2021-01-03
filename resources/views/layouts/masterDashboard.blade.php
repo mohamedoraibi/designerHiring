@@ -9,29 +9,6 @@
 <div id="wrapper">
 
 @include('layouts.header')
-@if(View::hasSection('titlebar'))
-    <!-- Titlebar
-================================================== -->
-        <div id="titlebar" class="gradient">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <h2>@yield('title')</h2>
-
-                        <!-- Breadcrumbs -->
-                        <nav id="breadcrumbs" class="dark">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li>@yield('title')</li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-@endif
-
 
 
 <!-- Dashboard Container -->
@@ -42,14 +19,14 @@
 
                 <!-- Dashboard Headline -->
                 <div class="dashboard-headline">
-                    <h3>Add a Project</h3>
+                    <h3>@yield('title')</h3>
 
                     <!-- Breadcrumbs -->
                     <nav id="breadcrumbs" class="dark">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li>Add a Project</li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/dashboard">Dashboard</a></li>
+                            <li>@yield('title')</li>
                         </ul>
                     </nav>
                 </div>
