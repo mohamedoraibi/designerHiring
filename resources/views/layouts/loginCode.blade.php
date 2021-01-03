@@ -36,6 +36,10 @@
         <input type="password" class="input-text with-border" name="password" id="password"
                placeholder="Password" required/>
     </div>
+    <label for="remember_me" class="flex items-center">
+        <input id="remember_me" type="checkbox" style="width: 20px;" class="form-checkbox" name="remember">
+        <span class="ml-2 text-sm text-gray-200">{{ __('Remember me') }}</span>
+    </label>
     <a href="#" class="forgot-password">Forgot Password?</a>
 </form>
 
