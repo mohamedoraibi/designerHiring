@@ -52,7 +52,7 @@ class UserController extends Controller
                 $data['is_project_owner'] = 0;
             if ($request->is_designer == 0 && $request->is_project_owner == 0) {
                 $errors = new MessageBag(['account-type' => ['You Should Chose the Account Type']]); // if Auth::attempt fails (wrong credentials) create a new message bag instance.
-                return redirect()->back()->WithErrors($errors)->withInput($request->except('password'));
+                return redirect('/register')->WithErrors($errors)->withInput($request->except('password'));
             }
 
 //            dd($data);

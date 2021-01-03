@@ -34,15 +34,15 @@
 
 
 
-@yield('content')
-<!-- Spacer -->
-    <div class="margin-top-70"></div>
-    <!-- Spacer / End-->
+<!-- Dashboard Container -->
+    <div class="dashboard-container">
+        @include('layouts.sidebarDashboard')
+        @yield('content')
+    </div>
 
 </div>
 <!-- Wrapper / End -->
 @include('layouts.loginAndRegisterModal')
-@include('layouts.footer')
 
 @include('layouts.footerJS')
 

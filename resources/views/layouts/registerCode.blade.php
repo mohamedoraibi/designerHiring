@@ -25,13 +25,13 @@
     <div class="account-type">
         <div>
             <input type="checkbox" value="1" name="is_designer" id="is_designer"
-                   class="account-type-radio" checked/>
+                   class="account-type-radio"/>
             <label for="is_designer" class="ripple-effect-dark"><i
                     class="icon-material-outline-account-circle"></i> Designer</label>
         </div>
         <div>
             <input type="checkbox" value="1" name="is_project_owner" id="is_project_owner"
-                   class="account-type-radio" checked/>
+                   class="account-type-radio"/>
             <label for="is_project_owner" class="ripple-effect-dark"><i
                     class="icon-material-outline-account-circle"></i> Project Owner</label>
         </div>
