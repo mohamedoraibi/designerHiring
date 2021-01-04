@@ -10,6 +10,8 @@
 @endsection
 @section('titlebar')
 @endsection
+@section('page-error')
+@endsection
 @section('content')
 
     <div class="container">

@@ -6,19 +6,21 @@
 <!-- Form -->
 <form method="POST" action="{{ route('register') }}" id="register-account-form">
     @csrf
-    @if ($errors->any())
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <i class="mdi mdi-block-helper mr-2"></i>
-            <ul>
-                <div class="notification error closeable">
-                    <strong>Whoops!</strong> There is a problem with the input.<br><br>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                    <a class="close"></a>
-                </div>
-            </ul>
-        </div>
+    @if(View::hasSection('page-error'))
+        @if ($errors->any())
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <i class="mdi mdi-block-helper mr-2"></i>
+                <ul>
+                    <div class="notification error closeable">
+                        <strong>Whoops!</strong> There is a problem with the input.<br><br>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                        <a class="close"></a>
+                    </div>
+                </ul>
+            </div>
+        @endif
     @endif
     <span>Chose your account type <b>Designer</b> or <b>Project owner</b> or <b>Both</b> ? </span>
     <!-- Account Type -->

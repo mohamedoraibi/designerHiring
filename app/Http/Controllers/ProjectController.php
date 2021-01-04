@@ -24,13 +24,13 @@ class ProjectController extends Controller
 
         $request->validate([
             'name' => 'required|string|max:255',
-            'budget' => 'required|numeric|max:255',
+            'budget' => 'required|numeric',
             'deadline' => 'required|date',
             'details' => 'required|string',
         ]);
         $data = $request->all();
         $data['user_id'] = $request->user()->id;
-//        $data['device'] = $request->user()->name;
+        $data['device'] = $request->user()->name;
         $data['visitor'] = $request->ip();
 
 //        dd($data);

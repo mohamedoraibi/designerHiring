@@ -36,8 +36,8 @@ Route::post('/register', [UserController::class, 'store'])->name('register');
 Route::get('/login', [UserController::class, 'loginView']);
 Route::post('/login', [UserController::class, 'authenticate'])->name('login');
 
-Route::get('/project/new', [ProjectController::class, 'create']);
-Route::post('/project/add', [ProjectController::class, 'store'])->name('projectAdd');
+Route::get('/project', [ProjectController::class, 'create']);
+Route::post('/project', [ProjectController::class, 'store'])->name('projectAdd');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

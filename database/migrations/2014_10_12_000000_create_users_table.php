@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->foreignId('current_team_id')->nullable();
             $table->text('profile_photo_path')->nullable();
             $table->ipAddress('visitor')->nullable();
-            $table->macAddress('device')->nullable();
+            $table->longText('device')->nullable();
             $table->string('last_active_at')->nullable();
             $table->string('last_login_ip')->nullable();
             $table->softDeletes();

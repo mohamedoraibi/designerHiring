@@ -21,7 +21,7 @@ class CreateProjectsTable extends Migration
             $table->date('deadline')->nullable();
             $table->longText('details')->nullable();
             $table->ipAddress('visitor')->nullable();
-            $table->macAddress('device')->nullable();
+            $table->longText('device')->nullable();
             $table->softDeletes();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')
