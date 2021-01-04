@@ -15,7 +15,7 @@
                         <div class="footer-rows-left">
                             <div class="footer-row">
                                 <div class="footer-row-inner footer-logo">
-                                    <img src="{{ asset('newStyle/images/logo2.png') }}" alt="">
+                                    <img src="{{ asset('newStyle/images/logo.png') }}" alt="">
                                 </div>
                             </div>
                         </div>
@@ -57,17 +57,17 @@
                             </div>
 
                             <!-- Language Switcher -->
-                            <div class="footer-row">
-                                <div class="footer-row-inner">
-                                    <select class="selectpicker language-switcher" data-selected-text-format="count"
-                                            data-size="5">
-                                        <option selected>English</option>
-                                        <option>Français</option>
-                                        <option>Español</option>
-                                        <option>Deutsch</option>
-                                    </select>
-                                </div>
-                            </div>
+                            {{--                            <div class="footer-row">--}}
+                            {{--                                <div class="footer-row-inner">--}}
+                            {{--                                    <select class="selectpicker language-switcher" data-selected-text-format="count"--}}
+                            {{--                                            data-size="5">--}}
+                            {{--                                        <option selected>English</option>--}}
+                            {{--                                        <option>Français</option>--}}
+                            {{--                                        <option>Español</option>--}}
+                            {{--                                        <option>Deutsch</option>--}}
+                            {{--                                    </select>--}}
+                            {{--                                </div>--}}
+                            {{--                            </div>--}}
                         </div>
 
                     </div>
