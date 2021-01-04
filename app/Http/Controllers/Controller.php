@@ -16,9 +16,12 @@ class Controller extends BaseController
     public function index()
     {
         $projects = Project::take(4)->get();
-        $designers = User::where('is_designer', '=', 1)->take(4)->get();
+        $projectsCount = Project::count();
+        $designers = User::where('is_designer', '=', 1)->take(6)->get();
+        $designersCount = User::where('is_designer', '=', 1)->count();
+
 //        return response($designers);
-        return view('homepage.index', compact('projects', 'designers'));
+        return view('homepage.index', compact('projects', 'designers', 'projectsCount', 'designersCount'));
 
     }
 

@@ -36,11 +36,12 @@
                     <div class="intro-banner-search-form margin-top-95">
 
                         <!-- Search Field -->
-                        
+
 
                         <!-- Search Field -->
                         <div class="intro-search-field">
-                            <label for="intro-keywords" class="field-title ripple-effect">What are you looking for?</label>
+                            <label for="intro-keywords" class="field-title ripple-effect">What are you looking
+                                for?</label>
                             <input id="intro-keywords" type="text" placeholder="Project Title or a Designer">
                         </div>
 
@@ -59,11 +60,11 @@
                 <div class="col-md-12">
                     <ul class="intro-stats margin-top-45 hide-under-992px">
                         <li>
-                            <strong class="counter">3,543</strong>
+                            <strong class="counter">{{$projectsCount}}</strong>
                             <span>Projects Posted</span>
                         </li>
                         <li>
-                            <strong class="counter">1,232</strong>
+                            <strong class="counter">{{$designersCount}}</strong>
                             <span>Designers</span>
                         </li>
                     </ul>
@@ -208,220 +209,52 @@
 
                     <!-- Jobs Container -->
                     <div class="listings-container compact-list-layout margin-top-35">
-
+                    @foreach($projects as $project)
                         <!-- Job Listing -->
-                        <a href="single-job-page.html" class="job-listing with-apply-button">
+                            <a href="single-job-page.html" class="job-listing with-apply-button">
 
-                            <!-- Job Listing Details -->
-                            <div class="job-listing-details" style="display:flex; justify-content:space-between;">
+                                <!-- Job Listing Details -->
+                                <div class="job-listing-details" style="display:flex; justify-content:space-between;">
 
-                                <div style="display:flex; justify-content:space-between; align-items:center;">
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
-                                    </div>
+                                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                                        <!-- Logo -->
+                                        <div class="job-listing-company-logo">
+                                            <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
+                                        </div>
 
-                                    <!-- Details -->
-                                    <div class="row margin-left-20" style="align-items:center;">
-                                        <div class="job-listing-description col-xl-7">
-                                            <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
+                                        <!-- Details -->
+                                        <div class="row margin-left-20" style="align-items:center;">
+                                            <div class="job-listing-description col-xl-7">
+                                                <h3 class="job-listing-title">{{$project->name}}</h3>
 
-                                            <!-- Job Listing Footer -->
-                                            <div class="job-listing-footer">
-                                                <ul>
-                                                    <li><i class="icon-material-outline-business"></i> Hexagon
-                                                        <div class="verified-badge" title="Verified Employer"
-                                                            data-tippy-placement="top"></div>
-                                                    </li>
-                                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                                </ul>   
+                                                <!-- Job Listing Footer -->
+                                                <div class="job-listing-footer">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="icon-feather-dollar-sign"></i> {{$project->budget}}
+                                                            <div class="verified-badge" title="Verified Employer"
+                                                                 data-tippy-placement="top"></div>
+                                                        </li>
+                                                        <li><i class="icon-material-outline-access-time"></i> 2 days ago
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="task-tags col-xl-5">
+                                                <span>iOS</span>
+                                                <span>Android</span>
+                                                <span>mobile apps</span>
+                                                <span>design</span>
                                             </div>
                                         </div>
-                                        <div class="task-tags col-xl-5">
-                                            <span>iOS</span>
-                                            <span>Android</span>
-                                            <span>mobile apps</span>
-                                            <span>design</span>
-                                        </div>
                                     </div>
+
+                                    <!-- Apply Button -->
+                                    <span class="list-apply-button ripple-effect">Bidding</span>
                                 </div>
 
-                                <!-- Apply Button -->
-                                <span class="list-apply-button ripple-effect">Details</span>
-                            </div>
-                        </a>
-
-
-                        <!-- Job Listing -->
-                        <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                            <!-- Job Listing Details -->
-                            <div class="job-listing-details" style="display:flex; justify-content:space-between;">
-
-                                <div style="display:flex; justify-content:space-between; align-items:center;">
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="row margin-left-20" style="align-items:center;">
-                                        <div class="job-listing-description col-xl-7">
-                                            <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
-
-                                            <!-- Job Listing Footer -->
-                                            <div class="job-listing-footer">
-                                                <ul>
-                                                    <li><i class="icon-material-outline-business"></i> Hexagon
-                                                        <div class="verified-badge" title="Verified Employer"
-                                                            data-tippy-placement="top"></div>
-                                                    </li>
-                                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                                </ul>   
-                                            </div>
-                                        </div>
-                                        <div class="task-tags col-xl-5">
-                                            <span>iOS</span>
-                                            <span>Android</span>
-                                            <span>mobile apps</span>
-                                            <span>design</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Apply Button -->
-                                <span class="list-apply-button ripple-effect">Details</span>
-                            </div>
-                        </a>
-
-
-                        <!-- Job Listing -->
-                        <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                            <!-- Job Listing Details -->
-                            <div class="job-listing-details" style="display:flex; justify-content:space-between;">
-
-                                <div style="display:flex; justify-content:space-between; align-items:center;">
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="row margin-left-20" style="align-items:center;">
-                                        <div class="job-listing-description col-xl-7">
-                                            <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
-
-                                            <!-- Job Listing Footer -->
-                                            <div class="job-listing-footer">
-                                                <ul>
-                                                    <li><i class="icon-material-outline-business"></i> Hexagon
-                                                        <div class="verified-badge" title="Verified Employer"
-                                                            data-tippy-placement="top"></div>
-                                                    </li>
-                                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                                </ul>   
-                                            </div>
-                                        </div>
-                                        <div class="task-tags col-xl-5">
-                                            <span>iOS</span>
-                                            <span>Android</span>
-                                            <span>mobile apps</span>
-                                            <span>design</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Apply Button -->
-                                <span class="list-apply-button ripple-effect">Details</span>
-                            </div>
-                        </a>
-
-
-                        <!-- Job Listing -->
-                        <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                        <!-- Job Listing Details -->
-                        <div class="job-listing-details" style="display:flex; justify-content:space-between;">
-
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <!-- Logo -->
-                                <div class="job-listing-company-logo">
-                                    <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
-                                </div>
-
-                                <!-- Details -->
-                                <div class="row margin-left-20" style="align-items:center;">
-                                    <div class="job-listing-description col-xl-7">
-                                        <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
-
-                                        <!-- Job Listing Footer -->
-                                        <div class="job-listing-footer">
-                                            <ul>
-                                                <li><i class="icon-material-outline-business"></i> Hexagon
-                                                    <div class="verified-badge" title="Verified Employer"
-                                                        data-tippy-placement="top"></div>
-                                                </li>
-                                                <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                            </ul>   
-                                        </div>
-                                    </div>
-                                    <div class="task-tags col-xl-5">
-                                        <span>iOS</span>
-                                        <span>Android</span>
-                                        <span>mobile apps</span>
-                                        <span>design</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Apply Button -->
-                            <span class="list-apply-button ripple-effect">Details</span>
-                        </div>
-                        </a>
-
-
-                        <!-- Job Listing -->
-                        <a href="single-job-page.html" class="job-listing with-apply-button">
-
-                            <!-- Job Listing Details -->
-                            <div class="job-listing-details" style="display:flex; justify-content:space-between;">
-
-                                <div style="display:flex; justify-content:space-between; align-items:center;">
-                                    <!-- Logo -->
-                                    <div class="job-listing-company-logo">
-                                        <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
-                                    </div>
-
-                                    <!-- Details -->
-                                    <div class="row margin-left-20" style="align-items:center;">
-                                        <div class="job-listing-description col-xl-7">
-                                            <h3 class="job-listing-title">Bilingual Event Support Specialist</h3>
-
-                                            <!-- Job Listing Footer -->
-                                            <div class="job-listing-footer">
-                                                <ul>
-                                                    <li><i class="icon-material-outline-business"></i> Hexagon
-                                                        <div class="verified-badge" title="Verified Employer"
-                                                            data-tippy-placement="top"></div>
-                                                    </li>
-                                                    <li><i class="icon-material-outline-access-time"></i> 2 days ago</li>
-                                                </ul>   
-                                            </div>
-                                        </div>
-                                        <div class="task-tags col-xl-5">
-                                            <span>iOS</span>
-                                            <span>Android</span>
-                                            <span>mobile apps</span>
-                                            <span>design</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Apply Button -->
-                                <span class="list-apply-button ripple-effect">Details</span>
-                            </div>
-                        </a>
+                            </a>
+                        @endforeach
 
                     </div>
                     <!-- Jobs Container / End -->
@@ -449,236 +282,48 @@
                 <div class="col-xl-12">
                     <div class="default-slick-carousel freelancers-container freelancers-grid-layout">
 
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <div class="verified-badge"></div>
-                                        <a href="single-freelancer-profile.html"><img
-                                                src="{{ asset('newStyle/images/user-avatar-big-01.jpg') }}" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="single-freelancer-profile.html">Tom Smith </a>
-                                        </h4>
-                                        <span>UI/UX Designer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <a href="single-freelancer-profile.html"
-                                   class="button button-sliding-icon ripple-effect">View Profile <i
-                                        class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
+                    @foreach($designers as $designer)
 
                         <!--Freelancer -->
-                        <div class="freelancer">
+                            <div class="freelancer">
 
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
+                                <!-- Overview -->
+                                <div class="freelancer-overview">
+                                    <div class="freelancer-overview-inner">
+                                        <!-- Bookmark Icon -->
+                                        <span class="bookmark-icon"></span>
 
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
+                                        <!-- Avatar -->
+                                        <div class="freelancer-avatar">
+                                            <div class="verified-badge"></div>
+                                            <a href="single-freelancer-profile.html"><img
+                                                    src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}"
+                                                    alt=""></a>
+                                        </div>
 
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <div class="verified-badge"></div>
-                                        <a href="single-freelancer-profile.html"><img
-                                                src="{{ asset('newStyle/images/user-avatar-big-02.jpg') }}" alt=""></a>
-                                    </div>
+                                        <!-- Name -->
+                                        <div class="freelancer-name">
+                                            <h4><a href="#">{{$designer->name}}</a>
+                                            </h4>
+                                            <span>Marketing & advertising graphic designer</span>
+                                        </div>
 
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">David Peterson </a></h4>
-                                        <span>Graphic Designer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <a href="single-freelancer-profile.html"
-                                   class="button button-sliding-icon ripple-effect">View Profile <i
-                                        class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <a href="single-freelancer-profile.html"><img
-                                                src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Marcin Kowalski </a></h4>
-                                        <span>Motion graphic designer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="4.9"></div>
+                                        <!-- Rating -->
+                                        <div class="freelancer-rating">
+                                            <div class="star-rating" data-rating="5.0"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <a href="single-freelancer-profile.html"
-                                   class="button button-sliding-icon ripple-effect">View Profile <i
-                                        class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <div class="verified-badge"></div>
-                                        <a href="single-freelancer-profile.html"><img
-                                                src="{{ asset('newStyle/images/user-avatar-big-03.jpg') }}" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Sindy Forest </a>
-                                        </h4>
-                                        <span>Marketing & advertising graphic designer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
+                                <!-- Details -->
+                                <div class="freelancer-details">
+                                    <a href="single-freelancer-profile.html"
+                                       class="button button-sliding-icon ripple-effect">View Profile <i
+                                            class="icon-material-outline-arrow-right-alt"></i></a>
                                 </div>
                             </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <a href="single-freelancer-profile.html"
-                                   class="button button-sliding-icon ripple-effect">View Profile <i
-                                        class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <a href="single-freelancer-profile.html"><img
-                                                src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Sebastiano Piccio </a></h4>
-                                        <span>Logo Designer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="4.5"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <a href="single-freelancer-profile.html"
-                                   class="button button-sliding-icon ripple-effect">View Profile <i
-                                        class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-                        <!--Freelancer -->
-                        <div class="freelancer">
-
-                            <!-- Overview -->
-                            <div class="freelancer-overview">
-                                <div class="freelancer-overview-inner">
-                                    <!-- Bookmark Icon -->
-                                    <span class="bookmark-icon"></span>
-
-                                    <!-- Avatar -->
-                                    <div class="freelancer-avatar">
-                                        <a href="single-freelancer-profile.html"><img
-                                                src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}" alt=""></a>
-                                    </div>
-
-                                    <!-- Name -->
-                                    <div class="freelancer-name">
-                                        <h4><a href="#">Gabriel Lagueux </a></h4>
-                                        <span>Graphic Designer</span>
-                                    </div>
-
-                                    <!-- Rating -->
-                                    <div class="freelancer-rating">
-                                        <div class="star-rating" data-rating="5.0"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Details -->
-                            <div class="freelancer-details">
-                                <a href="single-freelancer-profile.html"
-                                   class="button button-sliding-icon ripple-effect">View Profile <i
-                                        class="icon-material-outline-arrow-right-alt"></i></a>
-                            </div>
-                        </div>
-                        <!-- Freelancer / End -->
-
-
+                            <!-- Freelancer / End -->
+                        @endforeach
                     </div>
                 </div>
 
