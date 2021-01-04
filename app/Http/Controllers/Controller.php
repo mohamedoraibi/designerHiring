@@ -15,9 +15,9 @@ class Controller extends BaseController
 
     public function index()
     {
-        $projects = Project::take(4)->get();
+        $projects = Project::orderBy('id', 'desc')->take(4)->get();
         $projectsCount = Project::count();
-        $designers = User::where('is_designer', '=', 1)->take(6)->get();
+        $designers = User::orderBy('id', 'desc')->where('is_designer', '=', 1)->take(6)->get();
         $designersCount = User::where('is_designer', '=', 1)->count();
 
 //        return response($designers);

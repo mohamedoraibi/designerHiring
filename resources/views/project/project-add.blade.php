@@ -45,7 +45,7 @@
                             <div class="col-xl-8">
                                 <div class="submit-field">
                                     <h5>Project Name</h5>
-                                    <input type="text" name="name" id="name" class="with-border"
+                                    <input type="text" name="name" value="{{old('name')}}" id="name" class="with-border"
                                            placeholder="e.g. build me a website">
                                 </div>
                             </div>
@@ -56,7 +56,8 @@
                                 <div class="submit-field">
                                     <h5>Budget</h5>
                                     <div class="input-with-icon">
-                                        <input class="with-border" type="text" name="budget" id="budget"
+                                        <input class="with-border" type="text" value="{{old('budget')}}" name="budget"
+                                               id="budget"
                                                placeholder="e.g. 75$">
                                         <i class="currency">USD</i>
                                     </div>
@@ -68,7 +69,8 @@
                                     <h5>Deadline </h5>
                                     <div class="">
                                         <div id="autocomplete-container">
-                                            <input id="deadline" name="deadline" class="with-border"
+                                            <input id="deadline" name="deadline" value="{{old('deadline')}}"
+                                                   class="with-border"
                                                    type="date">
                                         </div>
                                     </div>
@@ -100,7 +102,8 @@
                         <div class="col-xl-8">
                             <div class="submit-field">
                                 <h5>Describe Your Project</h5>
-                                <textarea cols="30" name="details" id="details" rows="5" class="with-border"></textarea>
+                                <textarea cols="30" name="details" id="details" rows="5"
+                                          class="with-border">{{old('details')}}</textarea>
                             </div>
                         </div>
 

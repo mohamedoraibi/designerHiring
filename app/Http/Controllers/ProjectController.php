@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class ProjectController extends Controller
 {
@@ -21,22 +22,23 @@ class ProjectController extends Controller
 
     public function store(Request $request)
     {
-
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'budget' => 'required|numeric',
             'deadline' => 'required|date',
             'details' => 'required|string',
         ]);
-        $data = $request->all();
-        $data['user_id'] = $request->user()->id;
-        $data['device'] = $request->user()->name;
-        $data['visitor'] = $request->ip();
-
+        if ($validator->fails())
+            return redirect()->back()->WithErrors($validator->errors()->all())->withInput($request->except('password'));
+        else {
+            $data = $request->all();
+            $data['user_id'] = $request->user()->id;
+            $data['device'] = $request->user()->name;
+            $data['visitor'] = $request->ip();
 //        dd($data);
-        Project::create($data);
-
-        return redirect('/')->with('success', 'Project Published successfully.');
+            Project::create($data);
+            return redirect('/')->with('success', 'Project Published successfully.');
+        }
     }
 
     public function show($id)
