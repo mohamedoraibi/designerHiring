@@ -10,7 +10,6 @@
 
 @include('layouts.header')
 
-
 <!-- Dashboard Container -->
     <div class="dashboard-container">
         @include('layouts.sidebarDashboard')
