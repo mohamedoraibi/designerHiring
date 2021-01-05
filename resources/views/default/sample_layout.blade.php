@@ -6,11 +6,10 @@
     </style>
 @endsection
 @section('title')
-    Add New Project
+    test
 @endsection
 {{--@section('titlebar')--}}
 {{--@endsection--}}
 @section('content')
-
-
+    
 @endsection
