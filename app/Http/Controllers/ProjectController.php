@@ -11,7 +11,16 @@ class ProjectController extends Controller
 {
     public function index()
     {
+        if (Auth::user()) {
+            $Projects = Project::paginate(2);
 
+//        $posts = User::find(1)->project()->get();
+//        return response($posts);
+            return view('project.manage-projects', compact('Projects'));
+
+        } else {
+            return redirect('/login');
+        }
     }
 
     public function create()
@@ -44,7 +53,7 @@ class ProjectController extends Controller
                 $data['visitor'] = $request->ip();
 //        dd($data);
                 Project::create($data);
-                return redirect('/')->with('success', 'Project Published successfully.');
+                return redirect('/projects')->with('success', 'Project Published successfully.');
             }
         } else {
             return redirect('/login');

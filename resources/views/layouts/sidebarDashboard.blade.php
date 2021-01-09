@@ -19,7 +19,7 @@
                 <div class="dashboard-nav-inner">
 
                     <ul data-submenu-title="Start">
-                        <li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+                        <li><a href="/dashboard"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
                         <li><a href="dashboard-messages.html"><i class="icon-material-outline-question-answer"></i>
                                 Messages <span class="nav-tag">2</span></a></li>
                         <li><a href="dashboard-bookmarks.html"><i class="icon-material-outline-star-border"></i>
@@ -28,28 +28,32 @@
                                 Reviews</a></li>
                     </ul>
 
-                    <ul data-submenu-title="Organize and Manage">
-                        <li><a href="#"><i class="icon-material-outline-business-center"></i> Jobs</a>
+                    <ul data-submenu-title="Administration">
+                        <li><a href="/skills"><i class="icon-line-awesome-tasks"></i> Skills</a></li>
+                        <li><a href="/users"><i class="icon-line-awesome-user"></i> Users</a></li>
+                        <li><a href="/users"><i class="icon-material-outline-business-center"></i> Projects</a></li>
+                    </ul>
+                    <ul data-submenu-title="Management">
+                        <li><a href="#"><i class="icon-material-outline-business-center"></i> Projects</a>
                             <ul>
-                                <li><a href="dashboard-manage-jobs.html">Manage Jobs <span class="nav-tag">3</span></a>
+                                <li><a href="/projects">Manage Projects <span class="nav-tag">3</span></a>
                                 </li>
-                                <li><a href="dashboard-manage-candidates.html">Manage Candidates</a></li>
-                                <li><a href="dashboard-post-a-job.html">Post a Job</a></li>
+                                {{--                                <li><a href="dashboard-manage-candidates.html">Manage Candidates</a></li>--}}
+                                <li><a href="dashboard-post-a-job.html">Post a Project</a></li>
                             </ul>
                         </li>
                         <li class="active-submenu"><a href="#"><i class="icon-material-outline-assignment"></i>
                                 Tasks</a>
                             <ul>
-                                <li><a href="dashboard-manage-tasks.html">Manage Tasks <span
-                                            class="nav-tag">2</span></a></li>
-                                <li><a href="dashboard-manage-bidders.html">Manage Bidders</a></li>
+                                {{--                                <li><a href="dashboard-manage-tasks.html">Manage Tasks <span--}}
+                                {{--                                            class="nav-tag">2</span></a></li>--}}
+                                <li><a href="dashboard-manage-bidders.html">Manage Hiring</a></li>
                                 <li><a href="dashboard-my-active-bids.html">My Active Bids <span
                                             class="nav-tag">4</span></a></li>
-                                <li><a href="dashboard-post-a-task.html">Post a Task</a></li>
+                                {{--                                <li><a href="dashboard-post-a-task.html">Post a Task</a></li>--}}
                             </ul>
                         </li>
                     </ul>
-
                     <ul data-submenu-title="Account">
                         <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i>
                                 Settings</a></li>

@@ -35,4 +35,9 @@ class Controller extends BaseController
         return view('other.contact-us');
     }
 
+    public function dashboard()
+    {
+        return view('dashboard.dashboard');
+
+    }
 }

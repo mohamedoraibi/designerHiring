@@ -12,7 +12,7 @@ class SkillController extends Controller
     public function index()
     {
         if (Auth::user()) {
-            $Skills = Skill::get();
+            $Skills = Skill::paginate(5);
             return view('setting.skills', compact('Skills'));
         } else {
             return redirect('/login');

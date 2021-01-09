@@ -32,14 +32,18 @@
         </tr>
         </thead>
         <tbody>
-        @foreach($Skills as $Skill)
+        @if(!empty($Skills) && $Skills->count())
+            @foreach($Skills as $Skill)
+                <tr>
+                    <td>{{$Skill->name}}</td>
+                    <td><a href="">Edit</a> <a href="">Remove</a></td>
+                </tr>
+            @endforeach
+        @else
             <tr>
-
-                <td>{{$Skill->name}}</td>
-                <td><a href="">Edit</a> <a href="">Remove</a></td>
+                <td colspan="2">There are no data.</td>
             </tr>
-        @endforeach
-
+        @endif
         </tbody>
         <tfoot>
         <tr>
@@ -48,6 +52,9 @@
         </tr>
         </tfoot>
     </table>
+    <div class="pagination">
+        {!! $Skills->links() !!}
+    </div>
     <!-- Row -->
     {{--    <div class="row">--}}
 
