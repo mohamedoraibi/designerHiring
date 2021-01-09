@@ -23,10 +23,7 @@
                         <li><a href="{{ url('/') }}" class="current">Home</a></li>
                         <li><a href="#">Dashboard</a></li>
                         <li><a href="#">Projects</a></li>
-
                         <li><a href="#">Designers</a></li>
-
-
                     </ul>
                 </nav>
                 <div class="clearfix"></div>

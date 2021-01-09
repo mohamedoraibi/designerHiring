@@ -86,12 +86,9 @@
                 <!-- Links -->
                 <div class="col-xl-2 col-lg-2 col-md-3">
                     <div class="footer-links">
-                        <h3>For Candidates</h3>
+                        <h3>For Designers</h3>
                         <ul>
-                            <li><a href="#"><span>Browse Jobs</span></a></li>
-                            <li><a href="#"><span>Add Resume</span></a></li>
-                            <li><a href="#"><span>Job Alerts</span></a></li>
-                            <li><a href="#"><span>My Bookmarks</span></a></li>
+                            <li><a href="#"><span>Browse Projects</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -99,12 +96,9 @@
                 <!-- Links -->
                 <div class="col-xl-2 col-lg-2 col-md-3">
                     <div class="footer-links">
-                        <h3>For Employers</h3>
+                        <h3>For Project Owners</h3>
                         <ul>
-                            <li><a href="#"><span>Browse Candidates</span></a></li>
-                            <li><a href="#"><span>Post a Job</span></a></li>
-                            <li><a href="#"><span>Post a Task</span></a></li>
-                            <li><a href="#"><span>Plans & Pricing</span></a></li>
+                            <li><a href="#"><span>Explore Designers</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -127,7 +121,9 @@
                         <h3>Account</h3>
                         <ul>
                             <li><a href="#"><span>Log In</span></a></li>
-                            <li><a href="#"><span>My Account</span></a></li>
+                            <li><a href="#"><span>Register</span></a></li>
+                            <li><a href="#"><span>Dashboard</span></a></li>
+                            <li><a href="#"><span>Setting</span></a></li>
                         </ul>
                     </div>
                 </div>
