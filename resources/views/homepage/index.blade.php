@@ -97,8 +97,8 @@
                             </div>
                             <div class="category-box-counter">612</div>
                             <div class="category-box-content">
-                                <h3>Web & Software Dev</h3>
-                                <p>Software Engineer, Web / Mobile Developer & More</p>
+                                <h3>Web Designer</h3>
+                                <p>CMS, eCommerce, HTML5, JavaScript & More</p>
                             </div>
                         </a>
 
@@ -109,8 +109,8 @@
                             </div>
                             <div class="category-box-counter">113</div>
                             <div class="category-box-content">
-                                <h3>Data Science & Analitycs</h3>
-                                <p>Data Specialist / Scientist, Data Analyst & More</p>
+                                <h3>Graphic Designer</h3>
+                                <p>Logos, Brochures, Leaflets, Business Cards, Invitations, Packaging & More</p>
                             </div>
                         </a>
 
@@ -121,8 +121,8 @@
                             </div>
                             <div class="category-box-counter">186</div>
                             <div class="category-box-content">
-                                <h3>Accounting & Consulting</h3>
-                                <p>Auditor, Accountant, Fnancial Analyst & More</p>
+                                <h3>Animation Designer</h3>
+                                <p>Maya, 3ds Max, Cinema 4D, Blender, Photoshop, Flash, and After Effects & More</p>
                             </div>
                         </a>
 
@@ -133,8 +133,9 @@
                             </div>
                             <div class="category-box-counter">298</div>
                             <div class="category-box-content">
-                                <h3>Writing & Translations</h3>
-                                <p>Copywriter, Creative Writer, Translator & More</p>
+                                <h3>Interior Designer</h3>
+                                <p>Designs the various aspects of a house/office/building, preferably according to the
+                                    behaviour of the people who are supposed to use these spaces & More</p>
                             </div>
                         </a>
 
@@ -145,8 +146,9 @@
                             </div>
                             <div class="category-box-counter">549</div>
                             <div class="category-box-content">
-                                <h3>Sales & Marketing</h3>
-                                <p>Brand Manager, Marketing Coordinator & More</p>
+                                <h3>Motion Graphics Designer</h3>
+                                <p>Animated Graphics, Animated Presentations, Storyboards, Product Demo, Movie Title
+                                    Sequence & More</p>
                             </div>
                         </a>
 
@@ -169,8 +171,10 @@
                             </div>
                             <div class="category-box-counter">125</div>
                             <div class="category-box-content">
-                                <h3>Digital Marketing</h3>
-                                <p>Darketing Analyst, Social Profile Admin & More</p>
+                                <h3>UI/UX Designer</h3>
+                                <p>UI:Creates interfaces for mobile applications and other software programs. <br> UX:
+                                    Responsible for creating user experiences by improving the design and usability of
+                                    the interaction between the user and the product.</p>
                             </div>
                         </a>
 
@@ -181,8 +185,8 @@
                             </div>
                             <div class="category-box-counter">445</div>
                             <div class="category-box-content">
-                                <h3>Education & Training</h3>
-                                <p>Advisor, Coach, Education Coordinator & More</p>
+                                <h3>Architectural Designer</h3>
+                                <p>Creates Plans for Buildings, Houses, and other places</p>
                             </div>
                         </a>
 
@@ -194,89 +198,98 @@
     </div>
     <!-- Category Boxes / End -->
 
+    @if(!$projects->isEmpty())
 
-    <!-- Features Jobs -->
-    <div class="section gray margin-top-45 padding-top-65 padding-bottom-75">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
 
-                    <!-- Section Headline -->
-                    <div class="section-headline margin-top-0 margin-bottom-35">
-                        <h3>Featured Projects</h3>
-                        <a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Projects</a>
-                    </div>
+        <!-- Features Jobs -->
+        <div class="section gray margin-top-45 padding-top-65 padding-bottom-75">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
 
-                    <!-- Jobs Container -->
-                    <div class="listings-container compact-list-layout margin-top-35">
-                    @foreach($projects as $project)
-                        <!-- Job Listing -->
-                            <a href="single-job-page.html" class="job-listing with-apply-button">
 
-                                <!-- Job Listing Details -->
-                                <div class="job-listing-details" style="display:flex; justify-content:space-between;">
+                        <!-- Section Headline -->
+                        <div class="section-headline margin-top-0 margin-bottom-35">
+                            <h3>Featured Projects</h3>
+                            <a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Projects</a>
+                        </div>
 
-                                    <div style="display:flex; justify-content:space-between; align-items:center;">
-                                        <!-- Logo -->
-                                        <div class="job-listing-company-logo">
-                                            <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
-                                        </div>
+                        <!-- Jobs Container -->
+                        <div class="listings-container compact-list-layout margin-top-35">
+                        @foreach($projects as $project)
+                            <!-- Job Listing -->
+                                <a href="single-job-page.html" class="job-listing with-apply-button">
 
-                                        <!-- Details -->
-                                        <div class="row margin-left-20" style="align-items:center;">
-                                            <div class="job-listing-description col-xl-7">
-                                                <h3 class="job-listing-title">{{$project->name}}</h3>
+                                    <!-- Job Listing Details -->
+                                    <div class="job-listing-details"
+                                         style="display:flex; justify-content:space-between;">
 
-                                                <!-- Job Listing Footer -->
-                                                <div class="job-listing-footer">
-                                                    <ul>
-                                                        <li>
-                                                            <i class="icon-feather-dollar-sign"></i> {{$project->budget}}
-                                                            <div class="verified-badge" title="Verified Employer"
-                                                                 data-tippy-placement="top"></div>
-                                                        </li>
-                                                        <li><i class="icon-material-outline-access-time"></i> 2 days ago
-                                                        </li>
-                                                    </ul>
+                                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                                            <!-- Logo -->
+                                            <div class="job-listing-company-logo">
+                                                <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
+                                            </div>
+
+                                            <!-- Details -->
+                                            <div class="row margin-left-20" style="align-items:center;">
+                                                <div class="job-listing-description col-xl-7">
+                                                    <h3 class="job-listing-title">{{$project->name}}</h3>
+
+                                                    <!-- Job Listing Footer -->
+                                                    <div class="job-listing-footer">
+                                                        <ul>
+                                                            <li>
+                                                                <i class="icon-feather-dollar-sign"></i> {{$project->budget}}
+                                                                <div class="verified-badge" title="Verified Employer"
+                                                                     data-tippy-placement="top"></div>
+                                                            </li>
+                                                            <li><i class="icon-material-outline-access-time"></i> 2 days
+                                                                ago
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="task-tags col-xl-5">
+                                                    <span>iOS</span>
+                                                    <span>Android</span>
+                                                    <span>mobile apps</span>
+                                                    <span>design</span>
                                                 </div>
                                             </div>
-                                            <div class="task-tags col-xl-5">
-                                                <span>iOS</span>
-                                                <span>Android</span>
-                                                <span>mobile apps</span>
-                                                <span>design</span>
-                                            </div>
                                         </div>
+
+                                        <!-- Apply Button -->
+                                        <span class="list-apply-button ripple-effect">Bidding</span>
                                     </div>
 
-                                    <!-- Apply Button -->
-                                    <span class="list-apply-button ripple-effect">Bidding</span>
-                                </div>
+                                </a>
+                            @endforeach
 
-                            </a>
-                        @endforeach
+                        </div>
+                        <!-- Jobs Container / End -->
 
                     </div>
-                    <!-- Jobs Container / End -->
-
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Featured Jobs / End -->
+        <!-- Featured Jobs / End -->
+    @else
+    @endif
+
+    @if(!$designers->isEmpty())
 
 
-    <!-- Highest Rated Freelancers -->
-    <div class="section padding-top-65 padding-bottom-70 full-width-carousel-fix">
-        <div class="container">
-            <div class="row">
+        <!-- Designers -->
+        <div class="section padding-top-65 padding-bottom-70 full-width-carousel-fix">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-xl-12">
-                    <!-- Section Headline -->
-                    <div class="section-headline margin-top-0 margin-bottom-25">
-                        <h3>Highest Rated Designers</h3>
-                        <a href="freelancers-grid-layout.html" class="headline-link">Browse All Designers</a>
-                    </div>
+                    <div class="col-xl-12">
+                        <!-- Section Headline -->
+                        <div class="section-headline margin-top-0 margin-bottom-25">
+                            <h3>Highest Rated Designers</h3>
+                            <a href="freelancers-grid-layout.html" class="headline-link">Browse All Designers</a>
+                        </div>
                 </div>
 
                 <div class="col-xl-12">
@@ -327,11 +340,12 @@
                     </div>
                 </div>
 
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Highest Rated Freelancers / End-->
-
+        <!--  Designers / End-->
+    @else
+    @endif
     @include('layouts.loginAndRegisterModal')
 
 @endsection

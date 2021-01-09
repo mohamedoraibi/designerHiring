@@ -72,4 +72,9 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Models\Project');
     }
+
+    public function skills()
+    {
+        return $this->belongsToMany(Skill::class, 'skill_users');
+    }
 }

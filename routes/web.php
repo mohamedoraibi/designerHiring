@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\SkillController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,13 @@ Route::post('/login', [UserController::class, 'authenticate'])->name('login');
 Route::get('/project', [ProjectController::class, 'create']);
 Route::post('/project', [ProjectController::class, 'store'])->name('projectAdd');
 
+Route::get('/profile', [UserController::class, 'profileView']);
+Route::get('/profile/setting', [UserController::class, 'settingView']);
+
+Route::get('/skill', [SkillController::class, 'create']);
+Route::post('/skill', [SkillController::class, 'store'])->name('skillAdd');
+
+Route::get('/skills', [SkillController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

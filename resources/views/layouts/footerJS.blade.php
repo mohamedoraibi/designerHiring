@@ -51,6 +51,6 @@
     }
 
 </script>
-
+@yield('additionalJS')
 <!-- Google API -->
 {{--<script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places&callback=initAutocomplete"></script>--}}

@@ -98,15 +98,15 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-xl-8">
-                            <div class="submit-field">
-                                <h5>Describe Your Project</h5>
-                                <textarea cols="30" name="details" id="details" rows="5"
-                                          class="with-border">{{old('details')}}</textarea>
+                        <div class="row">
+                            <div class="col-xl-8">
+                                <div class="submit-field">
+                                    <h5>Describe Your Project</h5>
+                                    <textarea cols="30" name="details" id="details" rows="5"
+                                              class="with-border">{{old('details')}}</textarea>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </form>
             </div>
@@ -114,7 +114,7 @@
     </div>
     <div class="col-xl-12">
         <button class="button ripple-effect big margin-top-30" type="submit"
-                form="project-form">Register
+                form="project-form">Submit
         </button>
     </div>
 

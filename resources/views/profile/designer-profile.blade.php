@@ -19,12 +19,17 @@
                 <div class="col-md-12">
                     <div class="single-page-header-inner">
                         <div class="left-side">
-                            <div class="header-image freelancer-avatar"><img src="images/user-avatar-big-02.jpg" alt=""></div>
+                            <div class="header-image freelancer-avatar"><img src="images/user-avatar-big-02.jpg" alt="">
+                            </div>
                             <div class="header-details">
-                                <h3>David Peterson <span>UI/UX Designer</span></h3>
+                                <h3>{{$User->name}}<span>UI/UX Designer</span></h3>
                                 <ul>
-                                    <li><div class="star-rating" data-rating="5.0"></div></li>
-                                    <li><div class="verified-badge-with-title">Verified</div></li>
+                                    <li>
+                                        <div class="star-rating" data-rating="5.0"></div>
+                                    </li>
+                                    <li>
+                                        <div class="verified-badge-with-title">Verified</div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -39,19 +44,24 @@
     ================================================== -->
     <div class="container">
         <div class="row">
-            
+
             <!-- Content -->
             <div class="col-xl-8 col-lg-8 content-right-offset">
-                
+
                 <!-- Page Content -->
                 <div class="single-page-section">
                     <h3 class="margin-bottom-25">About Me</h3>
-                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                        approaches to corporate strategy foster collaborative thinking to further the overall value
+                        proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                        diversity and empowerment.</p>
 
-                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                        Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
+                        along the information highway will close the loop on focusing solely on the bottom line.</p>
                 </div>
 
-        
+
                 <!--Gallery-->
                 <div class="section white padding-top-0">
 
@@ -63,37 +73,37 @@
 
                         <a href="#" class="blog-compact-item-container col-xl-4">
                             <div class="">
-                                <img src="images/blog-04a.jpg" alt="">
+                                <img src="{{ asset('newStyle/images/blog-04a.jpg') }}" alt="">
                             </div>
                         </a>
 
                         <a href="#" class="blog-compact-item-container col-xl-4">
                             <div class="">
-                                <img src="images/blog-04a.jpg" alt="">
+                                <img src="{{ asset('newStyle/images/blog-04a.jpg') }}" alt="">
                             </div>
                         </a>
 
                         <a href="#" class="blog-compact-item-container col-xl-4">
                             <div class="">
-                                <img src="images/blog-04a.jpg" alt="">
+                                <img src="{{ asset('newStyle/images/blog-04a.jpg') }}" alt="">
                             </div>
                         </a>
 
                         <a href="#" class="blog-compact-item-container col-xl-4">
                             <div class="">
-                                <img src="images/blog-04a.jpg" alt="">
+                                <img src="{{ asset('newStyle/images/blog-04a.jpg') }}" alt="">
                             </div>
                         </a>
 
                         <a href="#" class="blog-compact-item-container col-xl-4">
                             <div class="">
-                                <img src="images/blog-04a.jpg" alt="">
+                                <img src="{{ asset('newStyle/images/blog-04a.jpg') }}" alt="">
                             </div>
                         </a>
 
                         <a href="#" class="blog-compact-item-container col-xl-4">
                             <div class="">
-                                <img src="images/blog-04a.jpg" alt="">
+                                <img src="{{ asset('newStyle/images/blog-04a.jpg') }}" alt="">
                             </div>
                         </a>
                     </div>
@@ -104,12 +114,14 @@
                 <div class="pagination-container margin-top-20 margin-bottom-20">
                     <nav class="pagination">
                         <ul>
-                            <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
+                            <li class="pagination-arrow"><a href="#" class="ripple-effect"><i
+                                        class="icon-material-outline-keyboard-arrow-left"></i></a></li>
                             <li><a href="#" class="ripple-effect current-page">1</a></li>
                             <li><a href="#" class="ripple-effect">2</a></li>
                             <li><a href="#" class="ripple-effect">3</a></li>
                             <li><a href="#" class="ripple-effect">4</a></li>
-                            <li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
+                            <li class="pagination-arrow"><a href="#" class="ripple-effect"><i
+                                        class="icon-material-outline-keyboard-arrow-right"></i></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -131,16 +143,20 @@
                                 <div class="item-image">
                                     <img src="images/browse-companies-03.png" alt="">
                                 </div>
-                                
+
                                 <!-- Content -->
                                 <div class="item-content">
                                     <h4>Development Team Leader</h4>
                                     <div class="item-details margin-top-7">
-                                        <div class="detail-item"><a href="#"><i class="icon-material-outline-business"></i> Acodia</a></div>
-                                        <div class="detail-item"><i class="icon-material-outline-date-range"></i> May 2019 - Present</div>
+                                        <div class="detail-item"><a href="#"><i
+                                                    class="icon-material-outline-business"></i> Acodia</a></div>
+                                        <div class="detail-item"><i class="icon-material-outline-date-range"></i> May
+                                            2019 - Present
+                                        </div>
                                     </div>
                                     <div class="item-description">
-                                        <p>Focus the team on the tasks at hand or the internal and external customer requirements.</p>
+                                        <p>Focus the team on the tasks at hand or the internal and external customer
+                                            requirements.</p>
                                     </div>
                                 </div>
                             </div>
@@ -151,16 +167,20 @@
                                 <div class="item-image">
                                     <img src="images/browse-companies-04.png" alt="">
                                 </div>
-                                
+
                                 <!-- Content -->
                                 <div class="item-content">
                                     <h4><a href="#">Lead UX/UI Designer</a></h4>
                                     <div class="item-details margin-top-7">
-                                        <div class="detail-item"><a href="#"><i class="icon-material-outline-business"></i> Acorta</a></div>
-                                        <div class="detail-item"><i class="icon-material-outline-date-range"></i> April 2014 - May 2019</div>
+                                        <div class="detail-item"><a href="#"><i
+                                                    class="icon-material-outline-business"></i> Acorta</a></div>
+                                        <div class="detail-item"><i class="icon-material-outline-date-range"></i> April
+                                            2014 - May 2019
+                                        </div>
                                     </div>
                                     <div class="item-description">
-                                        <p>I designed and implemented 10+ custom web-based CRMs, workflow systems, payment solutions and mobile apps.</p>
+                                        <p>I designed and implemented 10+ custom web-based CRMs, workflow systems,
+                                            payment solutions and mobile apps.</p>
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +190,7 @@
                 <!-- Boxed List / End -->
 
             </div>
-            
+
 
             <!-- Sidebar -->
             <div class="col-xl-4 col-lg-4">
@@ -179,14 +199,15 @@
                     <div class="row margin-bottom-25">
 
                         <!-- Button -->
-                        <a href="#small-dialog" class="apply-now-button popup-with-zoom-anim margin-bottom-25 col-lg-6">Make an Offer <i class="icon-material-outline-arrow-right-alt"></i></a>
-                        
+                        <a href="#small-dialog" class="apply-now-button popup-with-zoom-anim margin-bottom-25 col-lg-6">Make
+                            an Offer <i class="icon-material-outline-arrow-right-alt"></i></a>
+
                         <!-- Profile Overview -->
                         <div class="profile-overview col-lg-6">
                             <div class="overview-item"><strong>53</strong><span>Projects Done</span></div>
                         </div>
                     </div>
-                    
+
                     <!-- Freelancer Indicators -->
                     <div class="sidebar-widget">
                         <div class="freelancer-indicators">
@@ -204,14 +225,14 @@
                                 <div class="indicator-bar" data-indicator-percentage="100"><span></span></div>
                                 <span>Recommendation</span>
                             </div>
-                            
+
                             <!-- Indicator -->
                             <div class="indicator">
                                 <strong>90%</strong>
                                 <div class="indicator-bar" data-indicator-percentage="90"><span></span></div>
                                 <span>On Time</span>
-                            </div>	
-                                                
+                            </div>
+
                             <!-- Indicator -->
                             <div class="indicator">
                                 <strong>80%</strong>
@@ -220,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <!-- Widget -->
                     <div class="sidebar-widget">
@@ -251,7 +272,9 @@
                         <!-- Copy URL -->
                         <div class="copy-url">
                             <input id="copy-url" type="text" value="" class="with-border">
-                            <button class="copy-url-button ripple-effect" data-clipboard-target="#copy-url" title="Copy to Clipboard" data-tippy-placement="top"><i class="icon-material-outline-file-copy"></i></button>
+                            <button class="copy-url-button ripple-effect" data-clipboard-target="#copy-url"
+                                    title="Copy to Clipboard" data-tippy-placement="top"><i
+                                    class="icon-material-outline-file-copy"></i></button>
                         </div>
 
                         <!-- Share Buttons -->
@@ -260,10 +283,14 @@
                             <div class="share-buttons-content">
                                 <span>Interesting? <strong>Share It!</strong></span>
                                 <ul class="share-buttons-icons">
-                                    <li><a href="#" data-button-color="#3b5998" title="Share on Facebook" data-tippy-placement="top"><i class="icon-brand-facebook-f"></i></a></li>
-                                    <li><a href="#" data-button-color="#1da1f2" title="Share on Twitter" data-tippy-placement="top"><i class="icon-brand-twitter"></i></a></li>
-                                    <li><a href="#" data-button-color="#dd4b39" title="Share on Google Plus" data-tippy-placement="top"><i class="icon-brand-google-plus-g"></i></a></li>
-                                    <li><a href="#" data-button-color="#0077b5" title="Share on LinkedIn" data-tippy-placement="top"><i class="icon-brand-linkedin-in"></i></a></li>
+                                    <li><a href="#" data-button-color="#3b5998" title="Share on Facebook"
+                                           data-tippy-placement="top"><i class="icon-brand-facebook-f"></i></a></li>
+                                    <li><a href="#" data-button-color="#1da1f2" title="Share on Twitter"
+                                           data-tippy-placement="top"><i class="icon-brand-twitter"></i></a></li>
+                                    <li><a href="#" data-button-color="#dd4b39" title="Share on Google Plus"
+                                           data-tippy-placement="top"><i class="icon-brand-google-plus-g"></i></a></li>
+                                    <li><a href="#" data-button-color="#0077b5" title="Share on LinkedIn"
+                                           data-tippy-placement="top"><i class="icon-brand-linkedin-in"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -282,90 +309,96 @@
 
     <!-- Make an Offer Popup
 ================================================== -->
-<div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
+    <div id="small-dialog" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
-    <!--Tabs -->
-    <div class="sign-in-form">
+        <!--Tabs -->
+        <div class="sign-in-form">
 
-        <ul class="popup-tabs-nav">
-            <li><a href="#tab">Make an Offer</a></li>
-        </ul>
+            <ul class="popup-tabs-nav">
+                <li><a href="#tab">Make an Offer</a></li>
+            </ul>
 
-        <div class="popup-tabs-container">
+            <div class="popup-tabs-container">
 
-            <!-- Tab -->
-            <div class="popup-tab-content" id="tab">
-                
-                <!-- Welcome Text -->
-                <div class="welcome-text">
-                    <h3>Discuss your project with David</h3>
-                </div>
-                    
-                <!-- Form -->
-                <div class="content with-padding padding-bottom-10 ">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="submit-field">
-                                <h5>Project Name</h5>
-                                <input type="text" class="with-border" placeholder="e.g. build me a website">
-                            </div>
-                        </div>
+                <!-- Tab -->
+                <div class="popup-tab-content" id="tab">
+
+                    <!-- Welcome Text -->
+                    <div class="welcome-text">
+                        <h3>Discuss your project with David</h3>
                     </div>
-                        
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="submit-field">
-                                <h5>Budget</h5>
-                                <div class="input-with-icon">
-                                    <input class="with-border" type="text" placeholder="e.g. 75$">
-                                    <i class="currency">USD</i>
+
+                    <!-- Form -->
+                    <div class="content with-padding padding-bottom-10 ">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>Project Name</h5>
+                                    <input type="text" class="with-border" placeholder="e.g. build me a website">
                                 </div>
                             </div>
-                        </div>							
+                        </div>
 
-                        <div class="col-xl-6">
-                            <div class="submit-field">
-                                <h5>Deadline </h5>
-                                <div class="">
-                                    <div id="autocomplete-container">
-                                        <input id="autocomplete-input" class="with-border" type="date" placeholder="Anywhere">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="submit-field">
+                                    <h5>Budget</h5>
+                                    <div class="input-with-icon">
+                                        <input class="with-border" type="text" placeholder="e.g. 75$">
+                                        <i class="currency">USD</i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6">
+                                <div class="submit-field">
+                                    <h5>Deadline </h5>
+                                    <div class="">
+                                        <div id="autocomplete-container">
+                                            <input id="autocomplete-input" class="with-border" type="date"
+                                                   placeholder="Anywhere">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="submit-field">
-                                <h5>What skills are required? <i class="help-icon" data-tippy-placement="right" title="Up to 5 skills that best describe your project"></i></h5>
-                                <div class="keywords-container">
-                                    <div class="keyword-input-container">
-                                        <input type="text" class="keyword-input with-border" placeholder="Add Skills"/>
-                                        <button class="keyword-input-button ripple-effect"><i class="icon-material-outline-add"></i></button>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>What skills are required? <i class="help-icon" data-tippy-placement="right"
+                                                                     title="Up to 5 skills that best describe your project"></i>
+                                    </h5>
+                                    <div class="keywords-container">
+                                        <div class="keyword-input-container">
+                                            <input type="text" class="keyword-input with-border"
+                                                   placeholder="Add Skills"/>
+                                            <button class="keyword-input-button ripple-effect"><i
+                                                    class="icon-material-outline-add"></i></button>
+                                        </div>
+                                        <div class="keywords-list"><!-- keywords go here --></div>
+                                        <div class="clearfix"></div>
                                     </div>
-                                    <div class="keywords-list"><!-- keywords go here --></div>
-                                    <div class="clearfix"></div>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="col-xl-12">
+                            <div class="submit-field">
+                                <h5>Describe Your Project</h5>
+                                <textarea cols="30" rows="5" class="with-border"></textarea>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="col-xl-12">
-                        <div class="submit-field">
-                            <h5>Describe Your Project</h5>
-                            <textarea cols="30" rows="5" class="with-border"></textarea>	
-                        </div>
-                    </div>
+                    <!-- Button -->
+                    <button class="button full-width button-sliding-icon ripple-effect" type="submit">Make an Offer <i
+                            class="icon-material-outline-arrow-right-alt"></i></button>
 
                 </div>
-            
-                <!-- Button -->
-                <button class="button full-width button-sliding-icon ripple-effect" type="submit">Make an Offer <i class="icon-material-outline-arrow-right-alt"></i></button>
-            
             </div>
         </div>
     </div>
-</div>
 
 @endsection

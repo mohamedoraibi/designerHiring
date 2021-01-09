@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.masterDashboard')
 @section('css')
     <style>
 
@@ -33,7 +33,7 @@
                                 <img class="profile-pic" src="images/user-avatar-placeholder.png"
                                     alt="" />
                                 <div class="upload-button"></div>
-                                <input class="file-upload" type="file" accept="image/*" />
+                                <input class="file-upload" type="file" accept="image/*"/>
                             </div>
                         </div>
 
@@ -43,14 +43,14 @@
                                 <div class="col-xl-6">
                                     <div class="submit-field">
                                         <h5>Full Name</h5>
-                                        <input type="text" class="with-border" value="Michael Scott">
+                                        <input type="text" class="with-border" value="{{$User->name}}">
                                     </div>
                                 </div>
 
                                 <div class="col-xl-6">
                                     <div class="submit-field">
                                         <h5>Username</h5>
-                                        <input type="text" class="with-border" value="Prison Mike">
+                                        <input type="text" class="with-border" value="{{$User->username}}">
                                     </div>
                                 </div>
 
@@ -85,7 +85,7 @@
                                     <div class="submit-field">
                                         <h5>Email</h5>
                                         <input type="text" class="with-border"
-                                            value="michael@example.com">
+                                               value="{{$User->email}}">
                                     </div>
                                 </div>
 
@@ -153,8 +153,8 @@
                                     <div class="submit-field">
                                         <h5>Date of Birth:</h5>
                                         <input type="date" class="input-text with-border"
-                                            value="{{ old('birth') }}" name="birth" id="birth"
-                                            placeholder="Date of Birth" required />
+                                               value="{{$User->birth}}" name="birth" id="birth"
+                                               placeholder="Date of Birth" required/>
 
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                     <div class="submit-field">
                                         <h5>Introduce Yourself</h5>
                                         <textarea cols="30" rows="5"
-                                            class="with-border">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</textarea>
+                                                  class="with-border">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</textarea>
                                     </div>
                                 </div>
 

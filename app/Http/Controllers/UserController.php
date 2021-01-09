@@ -40,7 +40,7 @@ class UserController extends Controller
         else {
             $data = $request->all();
             $data['password'] = Hash::make($request->password);
-//        $data['device'] = $request->user()->name;
+//        $data['device'] = $request->user()->id;
             $data['visitor'] = $request->ip();
             if ($request->is_designer == "1")
                 $data['is_designer'] = 1;
@@ -107,5 +107,50 @@ class UserController extends Controller
 //        return redirect('/login');
         return Redirect::back()->withErrors($errors)->withInput($request->except('password'));
 
+    }
+
+    public function profileView()
+    {
+        if (Auth::user()) {
+            $User = User::find(Auth::user()->id);
+            return view('profile.designer-profile', compact('User'));
+        } else {
+            return redirect('/login');
+        }
+
+    }
+
+    public function settingView()
+    {
+        if (Auth::user()) {
+            $User = User::find(Auth::user()->id);
+            return view('profile.settings', compact('User'));
+        } else {
+            return redirect('/login');
+        }
+
+    }
+
+    public function settingUpdate(Request $request, $id)
+    {
+        if (Auth::user()) {
+//            $request->validate([
+//                'name' => 'required|string|max:255',
+//                'username' => 'required|string|max:255|unique:users',
+//                'birth' => 'required',
+//                'email' => 'required|email|unique:users',
+//            ]);
+//            $data = $request->all();
+//
+//            $data['device'] = $request->user()->id;
+//            $data['visitor'] = $request->ip();
+//
+//
+//            User::find($id)->update($data);
+//            return view('profile.designer-profile', compact('User'))
+//                ->with('success', 'Profile updated successfully');
+        } else {
+            return redirect('/login');
+        }
     }
 }
