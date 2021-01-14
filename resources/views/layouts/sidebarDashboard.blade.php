@@ -44,7 +44,7 @@
                                     </a>
                                 </li>
                                 {{--                                <li><a href="dashboard-manage-candidates.html">Manage Candidates</a></li>--}}
-                                <li><a href="dashboard-post-a-job.html">Post a Project</a></li>
+                                <li><a href="/project">Post a Project</a></li>
                             </ul>
                         </li>
                         <li class=" @yield('Tasks')"><a href="#"><i class="icon-material-outline-assignment"></i>
@@ -53,8 +53,7 @@
                                 {{--                                <li><a href="dashboard-manage-tasks.html">Manage Tasks <span--}}
                                 {{--                                            class="nav-tag">2</span></a></li>--}}
                                 <li><a href="dashboard-manage-bidders.html">Manage Hiring</a></li>
-                                <li><a href="dashboard-my-active-bids.html">My Active Bids <span
-                                            class="nav-tag">4</span></a></li>
+                                <li><a href="/bids">My Active Bids </a></li>
                                 {{--                                <li><a href="dashboard-post-a-task.html">Post a Task</a></li>--}}
                             </ul>
                         </li>

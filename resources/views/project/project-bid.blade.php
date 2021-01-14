@@ -19,10 +19,10 @@
                 <div class="col-md-12">
                     <div class="single-page-header-inner">
                         <div class="left-side">
-                            <div class="header-image"><a href="single-company-profile.html"><img
-                                        src="images/browse-companies-02.png" alt=""></a></div>
+                            {{--                            <div class="header-image"><a href="single-company-profile.html"><img--}}
+                            {{--                                        src="images/browse-companies-02.png" alt=""></a></div>--}}
                             <div class="header-details">
-                                <h3>Food Delivery Mobile Application</h3>
+                                <h3>{{$Project->name}}</h3>
                                 <h5>About the Employer</h5>
                                 <ul>
                                     <li><a href="single-company-profile.html"><i
@@ -39,7 +39,7 @@
                         <div class="right-side">
                             <div class="salary-box">
                                 <div class="salary-type">Project Budget</div>
-                                <div class="salary-amount">$2,500 - $4,500</div>
+                                <div class="salary-amount">{{$Project->budget}}</div>
                             </div>
                         </div>
                     </div>
@@ -60,19 +60,9 @@
                 <!-- Description -->
                 <div class="single-page-section">
                     <h3 class="margin-bottom-25">Project Description</h3>
-                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
-                        approaches to corporate strategy foster collaborative thinking to further the overall value
-                        proposition. Organically grow the holistic world view of disruptive innovation via workplace
-                        diversity and empowerment.</p>
+                    <p>{{$Project->details}}</p>
 
-                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
-                        day, going forward, a new normal that has evolved from generation X is on the runway heading
-                        towards a streamlined cloud solution. User generated content in real-time will have multiple
-                        touchpoints for offshoring.</p>
 
-                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
-                        Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
-                        along the information highway will close the loop on focusing solely on the bottom line.</p>
                 </div>
 
                 <!-- Skills -->
@@ -136,22 +126,37 @@
             <!-- Sidebar -->
             <div class="col-xl-4 col-lg-4">
                 <div class="sidebar-container">
-
-                    <div class="countdown green margin-bottom-35">6 days, 23 hours left</div>
+                    <div class="countdown green margin-bottom-35">The Deadline is <b>{{$deadline->diffForHumans()}}</b>
+                    </div>
 
                     <div class="sidebar-widget">
                         <div class="bidding-widget">
                             <div class="bidding-headline"><h3>Bid on this project!</h3></div>
-                            <form action="post" class="bidding-inner">
-
-                                <!-- Headline -->
-                                <span class="bidding-detail">Set your <strong>minimal rate</strong></span>
+                            <form method="POST" action="{{ route('bidding') }}" id="bid-form" class="bidding-inner">
+                                @csrf
+                                @if ($errors->any())
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        <i class="mdi mdi-block-helper mr-2"></i>
+                                        <ul>
+                                            <div class="notification error closeable">
+                                                <strong>Whoops!</strong> There is a problem with the input.<br><br>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                                <a class="close"></a>
+                                            </div>
+                                        </ul>
+                                    </div>
+                            @endif
+                            <!-- Headline -->
+                                <span class="bidding-detail">Set your <strong>Request budget</strong></span>
 
                                 <!-- Price Slider -->
                                 <div class="bidding-value">$<span id="biddingVal"></span></div>
                                 <input class="bidding-slider" type="text" value="price" id="price" name="price"
-                                       data-slider-handle="custom" data-slider-currency="$" data-slider-min="2500"
-                                       data-slider-max="4500" data-slider-value="auto" data-slider-step="50"
+                                       data-slider-handle="custom" data-slider-currency="$" data-slider-min="0"
+                                       data-slider-max="{{$Project->budget}}" data-slider-value="auto"
+                                       data-slider-step="1"
                                        data-slider-tooltip="hide"/>
 
                                 <input type="hidden" id="id_user_designer">
@@ -159,20 +164,36 @@
 
                                 <!-- Headline -->
                                 <span
-                                    class="bidding-detail margin-top-30">Set your <strong>delivery time</strong></span>
+                                    class="bidding-detail margin-top-30">Set your <strong>Delivery time</strong></span>
 
                                 <!-- Fields -->
-                                <input type="date" value="days" id="days" name="days" class="margin-top-15">
+                                <input type="number" value="{{old('days')}}" id="days" name="days" min="1"
+                                       class="margin-top-15"
+                                       required>
+
+                                <!-- Headline -->
+                                <span
+                                    class="bidding-detail margin-top-30">Write your <strong>Notes</strong></span>
+
+                                <!-- Fields -->
+                                <input type="text" value="{{old('notes')}}" id="notes" name="notes"
+                                       class="margin-top-15">
+                                <input type="hidden" value="{{$Project->id}}" id="id_project" name="id_project"
+                                       class="margin-top-15">
 
                                 <!-- Button -->
                                 <button id="snackbar-place-bid"
+                                        form="bid-form"
                                         class="button ripple-effect move-on-hover full-width margin-top-30"><span>Place a Bid</span>
                                 </button>
 
                             </form>
-                            <div class="bidding-signup">Don't have an account? <a href="#sign-in-dialog"
-                                                                                  class="register-tab sign-in popup-with-zoom-anim">Sign
-                                    Up</a></div>
+                            @guest
+                                <div class="bidding-signup">Don't have an account?
+                                    <a href="#sign-in-dialog" class="register-tab sign-in popup-with-zoom-anim">Sign
+                                        Up</a>
+                                </div>
+                            @endguest
                         </div>
                     </div>
 

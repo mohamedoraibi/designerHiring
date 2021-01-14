@@ -8,7 +8,9 @@
 @section('title')
     Add New Project
 @endsection
-
+@section('Projects')
+    active-submenu
+@endsection
 @section('content')
 
     <!-- Dashboard Content

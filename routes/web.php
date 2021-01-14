@@ -55,8 +55,11 @@ Route::post('/skill', [SkillController::class, 'store'])->name('skillAdd');
 Route::get('/skills', [SkillController::class, 'index']);
 
 Route::get('/profile/{id}', [Controller::class, 'profile']);
-Route::get('/bidding/{id}', [Controller::class, 'bidding']);
+Route::get('/project/explore/{id}', [ProjectController::class, 'show']);
 Route::get('/bid/{id}', [ProjectController::class, 'bid']);
+Route::post('/bid', [ProjectController::class, 'bidding'])->name('bidding');
+Route::get('/bids', [ProjectController::class, 'bids']);
+Route::get('/bid/remove/{id}', [ProjectController::class, 'destroyBid']);
 
 
 
