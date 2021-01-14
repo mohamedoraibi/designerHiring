@@ -24,6 +24,14 @@ class Project extends Model
         return $this->belongsTo(User::Class);
     }
 
+    public function bids()
+    {
+//        return $this->belongsTo(Bidding::Class);
+        return $this->belongsToMany(Bidding::class, 'biddings', 'id_user_project_owner', 'id_user_designer')->withPivot('id');
+
+//        return $this->belongsToMany(Bidding::class);
+    }
+
 //    public function startups()
 //    {
 //        return $this->belongsToMany(Startups::Class, 'people_startups', 'PeopleID', 'StartupID')->withPivot('id');

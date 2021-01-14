@@ -105,4 +105,11 @@ class ProjectController extends Controller
         return redirect('/projects')->with('success', 'Project deleted successfully');
     }
 
+    public function bid($id)
+    {
+        $Project = Project::find($id);
+//        $Project->bids(1);
+//        dd($Project);
+        return view('project.manage-bidders', compact('Project'));
+    }
 }

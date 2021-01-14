@@ -56,7 +56,7 @@ Route::get('/skills', [SkillController::class, 'index']);
 
 Route::get('/profile/{id}', [Controller::class, 'profile']);
 Route::get('/bidding/{id}', [Controller::class, 'bidding']);
-Route::get('/bid', [Controller::class, 'bid']);
+Route::get('/bid/{id}', [ProjectController::class, 'bid']);
 
 
 

@@ -66,9 +66,5 @@ class Controller extends BaseController
         return view('profile.designer-profile', compact('User'));
     }
 
-    public function bid()
-    {
-        return view('project.project-bid');
 
-    }
 }

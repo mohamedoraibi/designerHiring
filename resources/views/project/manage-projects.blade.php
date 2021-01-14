@@ -73,7 +73,7 @@
 
                                     <!-- Buttons -->
                                     <div class="buttons-to-right always-visible">
-                                        <a href="dashboard-manage-bidders.html" class="button ripple-effect"><i
+                                        <a href="/bid/{{$Project->id}}" class="button ripple-effect"><i
                                                 class="icon-material-outline-supervisor-account"></i> Manage Bidders
                                             <span class="button-info">3</span></a>
                                         <a href="/project/{{$Project->id}}"

@@ -12,44 +12,44 @@
 {{--@endsection--}}
 @section('content')
     <!-- Row -->
-	<div class="row">
+    <div class="row">
 
-    <!-- Dashboard Box -->
-    <div class="col-xl-12">
-        <div class="dashboard-box margin-top-0">
+        <!-- Dashboard Box -->
+        <div class="col-xl-12">
+            <div class="dashboard-box margin-top-0">
 
-            <!-- Headline -->
-            <div class="headline">
-                <span>Bids for <a href="#">Food Delivery Mobile Application</a></span>
-                <h3><i class="icon-material-outline-supervisor-account"></i> 3 Bidders</h3>
-                <div class="sort-by">
-                    <select class="selectpicker hide-tick">
-                        <option>Highest First</option>
-                        <option>Lowest First</option>
-                        <option>Fastest First</option>
-                    </select>
+                <!-- Headline -->
+                <div class="headline">
+                    <span>Bids for <a href="/project/explore/{{$Project->id}}">{{$Project->name}}</a></span>
+                    <h3><i class="icon-material-outline-supervisor-account"></i> 3 Bidders</h3>
+                    {{--                <div class="sort-by">--}}
+                    {{--                    <select class="selectpicker hide-tick">--}}
+                    {{--                        <option>Highest First</option>--}}
+                    {{--                        <option>Lowest First</option>--}}
+                    {{--                        <option>Fastest First</option>--}}
+                    {{--                    </select>--}}
+                    {{--                </div>--}}
                 </div>
-            </div>
 
-            <div class="content">
-                <ul class="dashboard-box-list">
-                    <li>
-                        <!-- Overview -->
-                        <div class="freelancer-overview manage-candidates">
-                            <div class="freelancer-overview-inner">
+                <div class="content">
+                    <ul class="dashboard-box-list">
+                        <li>
+                            <!-- Overview -->
+                            <div class="freelancer-overview manage-candidates">
+                                <div class="freelancer-overview-inner">
 
-                                <!-- Avatar -->
-                                <div class="freelancer-avatar">
-                                    <div class="verified-badge"></div>
-                                    <a href="#"><img src="images/user-avatar-big-02.jpg" alt=""></a>
-                                </div>
+                                    <!-- Avatar -->
+                                    <div class="freelancer-avatar">
+                                        <div class="verified-badge"></div>
+                                        <a href="#"><img src="images/user-avatar-big-02.jpg" alt=""></a>
+                                    </div>
 
-                                <!-- Name -->
-                                <div class="freelancer-name">
-                                    <h4><a href="#">David Peterson </a></h4>
+                                    <!-- Name -->
+                                    <div class="freelancer-name">
+                                        <h4><a href="#">David Peterson </a></h4>
 
 
-                                    <!-- Rating -->
+                                        <!-- Rating -->
                                     <div class="freelancer-rating">
                                         <div class="star-rating" data-rating="5.0"></div>
                                     </div>
@@ -155,28 +155,28 @@
 <div id="small-dialog-1" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
 	<!--Tabs -->
-	<div class="sign-in-form">
+    <div class="sign-in-form">
 
-		<ul class="popup-tabs-nav">
-			<li><a href="#tab1">Accept Offer</a></li>
-		</ul>
+        <ul class="popup-tabs-nav">
+            <li><a href="#tab1">Accept Offer</a></li>
+        </ul>
 
-		<div class="popup-tabs-container">
+        <div class="popup-tabs-container">
 
-			<!-- Tab -->
-			<div class="popup-tab-content" id="tab">
-				
-				<!-- Welcome Text -->
-				<div class="welcome-text">
-					<h3>Accept Offer From <strong>David</strong></h3>
-					<div class="bid-acceptance margin-top-15">
-						$3200
-					</div>
+            <!-- Tab -->
+            <div class="popup-tab-content" id="tab">
 
-				</div>
+                <!-- Welcome Text -->
+                <div class="welcome-text">
+                    <h3>Accept Offer From <strong>David</strong></h3>
+                    <div class="bid-acceptance margin-top-15">
+                        $3200
+                    </div>
 
-				<form id="terms">
-					<div class="radio">
+                </div>
+
+                <form id="terms">
+                    <div class="radio">
 						<input id="radio-1" name="radio" type="radio" required>
 						<label for="radio-1"><span class="radio-label"></span>  I have read and agree to the Terms and Conditions</label>
 					</div>
@@ -198,64 +198,66 @@
 <div id="small-dialog-2" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
 	<!--Tabs -->
-	<div class="sign-in-form">
+    <div class="sign-in-form">
 
-		<ul class="popup-tabs-nav">
-			<li><a href="#tab2">Send Message</a></li>
-		</ul>
+        <ul class="popup-tabs-nav">
+            <li><a href="#tab2">Send Message</a></li>
+        </ul>
 
-		<div class="popup-tabs-container">
+        <div class="popup-tabs-container">
 
-			<!-- Tab -->
-			<div class="popup-tab-content" id="tab2">
-				
-				<!-- Welcome Text -->
-				<div class="welcome-text">
-					<h3>Direct Message To <strong>David</strong></h3>
-				</div>
-					
-				<!-- Form -->
-				<form method="post" id="send-pm">
-					<textarea name="textarea" cols="10" placeholder="Message" class="with-border" required></textarea>
-				</form>
-				
-				<!-- Button -->
-				<button class="button full-width button-sliding-icon ripple-effect" type="submit" form="send-pm">Send <i class="icon-material-outline-arrow-right-alt"></i></button>
+            <!-- Tab -->
+            <div class="popup-tab-content" id="tab2">
 
-			</div>
+                <!-- Welcome Text -->
+                <div class="welcome-text">
+                    <h3>Direct Message To <strong>David</strong></h3>
+                </div>
 
-		</div>
-	</div>
+                <!-- Form -->
+                <form method="post" id="send-pm">
+                    <textarea name="textarea" cols="10" placeholder="Message" class="with-border" required></textarea>
+                </form>
+
+                <!-- Button -->
+                <button class="button full-width button-sliding-icon ripple-effect" type="submit" form="send-pm">Send <i
+                        class="icon-material-outline-arrow-right-alt"></i></button>
+
+            </div>
+
+        </div>
+    </div>
 </div>
-<!-- Send Direct Message Popup / End -->
+    <!-- Send Direct Message Popup / End -->
 
 
 <!-- Remove Bid Popup
 ================================================== -->
 <div id="small-dialog-3" class="zoom-anim-dialog mfp-hide dialog-with-tabs">
 
-	<!--Tabs -->
-		<ul class="popup-tabs-nav">
-			<li><a href="#tab2">Remove Bid</a></li>
-		</ul>
+    <!--Tabs -->
+    <ul class="popup-tabs-nav">
+        <li><a href="#tab2">Remove Bid</a></li>
+    </ul>
 
-		<div class="popup-tabs-container">
+    <div class="popup-tabs-container">
 
-			<!-- Tab -->
-			<div class="popup-tab-content" id="tab2">
-				
-				<!-- Welcome Text -->
-				<div class="welcome-text">
-					<h3>Are You Sure You Want To Remove <strong>David</strong> From The Bidders List?</h3>
-				</div>
-				
-				<!-- Button -->
-				<button class="button full-width button-sliding-icon ripple-effect" type="button" form="send-pm">Remove <i class="icon-material-outline-arrow-right-alt"></i></button>
+        <!-- Tab -->
+        <div class="popup-tab-content" id="tab2">
 
-			</div>
+            <!-- Welcome Text -->
+            <div class="welcome-text">
+                <h3>Are You Sure You Want To Remove <strong>David</strong> From The Bidders List?</h3>
+            </div>
 
-		</div>
+            <!-- Button -->
+            <button class="button full-width button-sliding-icon ripple-effect" type="button" form="send-pm">Remove <i
+                    class="icon-material-outline-arrow-right-alt"></i></button>
+
+        </div>
+
+    </div>
 </div>
-<!-- Remove Bid Popup / End -->
-    
+    <!-- Remove Bid Popup / End -->
+
 @endsection
