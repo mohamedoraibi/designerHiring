@@ -10,6 +10,9 @@
 @endsection
 {{--@section('titlebar')--}}
 {{--@endsection--}}
+@section('Projects')
+    active-submenu
+@endsection
 @section('content')
     <div class="col-xl-12">
         <div class="row">
@@ -52,7 +55,8 @@
                                                 <!-- Job Listing Footer -->
                                                 <div class="job-listing-footer">
                                                     <ul>
-                                                        <li><i class="icon-material-outline-access-time"></i> 23 hours
+                                                        <li>
+                                                            <i class="icon-material-outline-access-time"></i> {{$Project->created_at->diffForHumans()}}
                                                             left
                                                         </li>
                                                     </ul>
@@ -72,9 +76,13 @@
                                         <a href="dashboard-manage-bidders.html" class="button ripple-effect"><i
                                                 class="icon-material-outline-supervisor-account"></i> Manage Bidders
                                             <span class="button-info">3</span></a>
-                                        <a href="#" class="button gray ripple-effect ico" title="Edit"
+                                        <a href="/project/{{$Project->id}}"
+                                           class="button gray ripple-effect ico"
+                                           title="Edit"
                                            data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
-                                        <a href="#" class="button gray ripple-effect ico" title="Remove"
+                                        <a href="/project/remove/{{$Project->id}}"
+                                           onclick="return confirm('Are you sure want to remove the project ({{$Project->name}}?)')"
+                                           class="button gray ripple-effect ico" title="Remove"
                                            data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
                                     </div>
                                 </li>

@@ -4,12 +4,18 @@
 
 
     </style>
+    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">--}}
+    {{--<link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">--}}
 @endsection
 @section('title')
     DesignChi
 @endsection
 @section('content')
-
+    {{--    <form action="/tag" method="POST">--}}
+    {{--        <input type="text" name="tag" value="html,input,tag" data-role="tagsinput">--}}
+    {{--        @csrf--}}
+    {{--        <input type="submit">--}}
+    {{--    </form>--}}
     <!-- Intro Banner
     ================================================== -->
 
@@ -290,55 +296,55 @@
                             <h3>Highest Rated Designers</h3>
                             <a href="freelancers-grid-layout.html" class="headline-link">Browse All Designers</a>
                         </div>
-                </div>
+                    </div>
 
-                <div class="col-xl-12">
-                    <div class="default-slick-carousel freelancers-container freelancers-grid-layout">
+                    <div class="col-xl-12">
+                        <div class="default-slick-carousel freelancers-container freelancers-grid-layout">
 
-                    @foreach($designers as $designer)
+                        @foreach($designers as $designer)
 
-                        <!--Freelancer -->
-                            <div class="freelancer">
+                            <!--Freelancer -->
+                                <div class="freelancer">
 
-                                <!-- Overview -->
-                                <div class="freelancer-overview">
-                                    <div class="freelancer-overview-inner">
-                                        <!-- Bookmark Icon -->
-                                        <span class="bookmark-icon"></span>
+                                    <!-- Overview -->
+                                    <div class="freelancer-overview">
+                                        <div class="freelancer-overview-inner">
+                                            <!-- Bookmark Icon -->
+                                            <span class="bookmark-icon"></span>
 
-                                        <!-- Avatar -->
-                                        <div class="freelancer-avatar">
-                                            <div class="verified-badge"></div>
-                                            <a href="single-freelancer-profile.html"><img
-                                                    src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}"
-                                                    alt=""></a>
-                                        </div>
+                                            <!-- Avatar -->
+                                            <div class="freelancer-avatar">
+                                                <div class="verified-badge"></div>
+                                                <a href="single-freelancer-profile.html"><img
+                                                        src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}"
+                                                        alt=""></a>
+                                            </div>
 
-                                        <!-- Name -->
-                                        <div class="freelancer-name">
-                                            <h4><a href="#">{{$designer->name}}</a>
-                                            </h4>
-                                            <span>Marketing & advertising graphic designer</span>
-                                        </div>
+                                            <!-- Name -->
+                                            <div class="freelancer-name">
+                                                <h4><a href="#">{{$designer->name}}</a>
+                                                </h4>
+                                                <span>Marketing & advertising graphic designer</span>
+                                            </div>
 
-                                        <!-- Rating -->
-                                        <div class="freelancer-rating">
-                                            <div class="star-rating" data-rating="5.0"></div>
+                                            <!-- Rating -->
+                                            <div class="freelancer-rating">
+                                                <div class="star-rating" data-rating="5.0"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <!-- Details -->
-                                <div class="freelancer-details">
-                                    <a href="single-freelancer-profile.html"
-                                       class="button button-sliding-icon ripple-effect">View Profile <i
-                                            class="icon-material-outline-arrow-right-alt"></i></a>
+                                    <!-- Details -->
+                                    <div class="freelancer-details">
+                                        <a href="single-freelancer-profile.html"
+                                           class="button button-sliding-icon ripple-effect">View Profile <i
+                                                class="icon-material-outline-arrow-right-alt"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Freelancer / End -->
-                        @endforeach
+                                <!-- Freelancer / End -->
+                            @endforeach
+                        </div>
                     </div>
-                </div>
 
                 </div>
             </div>

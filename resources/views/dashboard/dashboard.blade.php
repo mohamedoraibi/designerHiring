@@ -8,7 +8,9 @@
 @section('title')
     Dashboard
 @endsection
-
+@section('Dashboard')
+    active-submenu
+@endsection
 @section('content')
 
 @endsection

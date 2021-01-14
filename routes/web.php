@@ -40,6 +40,9 @@ Route::post('/login', [UserController::class, 'authenticate'])->name('login');
 
 Route::get('/project', [ProjectController::class, 'create']);
 Route::post('/project', [ProjectController::class, 'store'])->name('projectAdd');
+Route::get('/project/{id}', [ProjectController::class, 'edit']);
+Route::post('/project/{id}', [ProjectController::class, 'update']);
+Route::get('/project/remove/{id}', [ProjectController::class, 'destroy']);
 
 Route::get('/projects', [ProjectController::class, 'index']);
 
@@ -50,6 +53,14 @@ Route::get('/skill', [SkillController::class, 'create']);
 Route::post('/skill', [SkillController::class, 'store'])->name('skillAdd');
 
 Route::get('/skills', [SkillController::class, 'index']);
+
+Route::get('/profile/{id}', [Controller::class, 'profile']);
+Route::get('/bidding/{id}', [Controller::class, 'bidding']);
+Route::get('/bid', [Controller::class, 'bid']);
+
+
+
+//Route::post('/tag', [Controller::class, 'tag']);
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');

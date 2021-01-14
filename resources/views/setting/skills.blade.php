@@ -11,6 +11,9 @@
 @section('title')
     Skills
 @endsection
+@section('Skills')
+    active-submenu
+@endsection
 {{--@section('titlebar')--}}
 {{--@endsection--}}
 @section('content')

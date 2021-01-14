@@ -22,7 +22,9 @@
                             <div class="header-image freelancer-avatar"><img src="images/user-avatar-big-02.jpg" alt="">
                             </div>
                             <div class="header-details">
-                                <h3>{{$User->name}}<span>UI/UX Designer</span></h3>
+                                <h3>
+                                    {{$User->name}}
+                                    <span>UI/UX Designer</span></h3>
                                 <ul>
                                     <li>
                                         <div class="star-rating" data-rating="5.0"></div>
