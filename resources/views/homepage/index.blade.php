@@ -1,82 +1,99 @@
 @extends('layouts.master')
 @section('css')
     <style>
-
-
+        .intro-benner1{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .intro-benner-img{
+            margin-top: 20px;
+            width: 100%;
+            height: 82%;
+        }
     </style>
-    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">--}}
-    {{--<link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">--}}
+    <!-- {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">--}} -->
+    <!-- {{--<link rel="stylesheet" href="http://bootstrap-tagsinput.github.io/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">--}} -->
 @endsection
 @section('title')
     DesignChi
 @endsection
 @section('content')
-    {{--    <form action="/tag" method="POST">--}}
+    <!-- {{--    <form action="/tag" method="POST">--}}
     {{--        <input type="text" name="tag" value="html,input,tag" data-role="tagsinput">--}}
     {{--        @csrf--}}
     {{--        <input type="submit">--}}
-    {{--    </form>--}}
+    {{--    </form>--}} -->
     <!-- Intro Banner
     ================================================== -->
 
     <!-- add class "disable-gradient" to enable consistent background overlay -->
-    <div class="intro-banner" data-background-image="{{ asset('newStyle/images/samples/home.png') }}">
+    <div class="section gray">
         <div class="container">
+            <div class="row intro-benner1 flex-column-reverse flex-xl-row">
+                <div class="col-xl-6 intro-banner">
+                    <div class="container ">
 
-            <!-- Intro Headline -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="banner-headline">
-                        <h3>
-                            <strong>Hire designers or be hired, at any time!</strong>
-                            <br>
-                            <span>Thousands of business owners use <strong class="color">DesignChi</strong> to turn their ideas into reality.</span>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Search Bar -->
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="intro-banner-search-form margin-top-95">
-
-                        <!-- Search Field -->
-
-
-                        <!-- Search Field -->
-                        <div class="intro-search-field">
-                            <label for="intro-keywords" class="field-title ripple-effect">What are you looking
-                                for?</label>
-                            <input id="intro-keywords" type="text" placeholder="Project Title or a Designer">
+                        <!-- Intro Headline -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="banner-headline" style="max-width: 100%">
+                                    <h3>
+                                        <strong>Hire designers or be hired, at any time!</strong>
+                                        <br>
+                                        <span>Thousands of business owners use <strong class="color">DesignChi</strong> to turn their ideas into reality.</span>
+                                    </h3>
+                                </div>
+                            </div>
                         </div>
 
-                        <!-- Button -->
-                        <div class="intro-search-button">
-                            <button class="button ripple-effect"
-                                    onclick="window.location.href='jobs-list-layout-full-page-map.html'">Search
-                            </button>
+                        <!-- Search Bar -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="intro-banner-search-form margin-top-95">
+
+                                    <!-- Search Field -->
+
+
+                                    <!-- Search Field -->
+                                    <div class="intro-search-field">
+                                        <label for="intro-keywords" class="field-title ripple-effect">What are you looking
+                                            for?</label>
+                                        <input id="intro-keywords" type="text" placeholder="Project Title or a Designer">
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="intro-search-button">
+                                        <button class="button ripple-effect"
+                                                onclick="window.location.href='jobs-list-layout-full-page-map.html'">Search
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Stats -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <ul class="intro-stats margin-top-45 hide-under-992px">
+                                    <li>
+                                        <strong class="counter">{{$projectsCount}}</strong>
+                                        <span>Projects Posted</span>
+                                    </li>
+                                    <li>
+                                        <strong class="counter">{{$designersCount}}</strong>
+                                        <span>Designers</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
 
-            <!-- Stats -->
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="intro-stats margin-top-45 hide-under-992px">
-                        <li>
-                            <strong class="counter">{{$projectsCount}}</strong>
-                            <span>Projects Posted</span>
-                        </li>
-                        <li>
-                            <strong class="counter">{{$designersCount}}</strong>
-                            <span>Designers</span>
-                        </li>
-                    </ul>
+                <div class="col-xl-6" >
+                    <img class="intro-benner-img" src="{{ asset('newStyle/images/samples/undraw_winter_designer_a2m7.svg') }}" alt="">
                 </div>
             </div>
-
         </div>
     </div>
 
