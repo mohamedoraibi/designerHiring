@@ -154,5 +154,10 @@ class UserController extends Controller
         }
     }
 
+    public function exploreDesigners()
+    {
+        $User = User::get();
+        return view('authNew.register', compact('User'));
+    }
 
 }

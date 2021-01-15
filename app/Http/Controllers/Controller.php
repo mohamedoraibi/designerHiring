@@ -59,10 +59,6 @@ class Controller extends BaseController
     public function profile($id)
     {
         $User = User::find($id);
-
-//        dd($User);
-//        return response($User);
-//        return view('profile.designer-profile', compact('User'));
         return view('profile.designer-profile', compact('User'));
     }
 

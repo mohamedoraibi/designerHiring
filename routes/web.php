@@ -32,23 +32,32 @@ Route::get('/users', [UserController::class, 'index']);
 Route::get('/about-us', [Controller::class, 'aboutUs']);
 Route::get('/contact-us', [Controller::class, 'contactUs']);
 
+//------------------------ Register------------------------//
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/register', [UserController::class, 'store'])->name('register');
-
+//------------------------ Login------------------------//
 Route::get('/login', [UserController::class, 'loginView']);
 Route::post('/login', [UserController::class, 'authenticate'])->name('login');
-
+//------------------------ Project------------------------//
 Route::get('/project', [ProjectController::class, 'create']);
 Route::post('/project', [ProjectController::class, 'store'])->name('projectAdd');
 Route::get('/project/{id}', [ProjectController::class, 'edit']);
 Route::post('/project/{id}', [ProjectController::class, 'update']);
 Route::get('/project/remove/{id}', [ProjectController::class, 'destroy']);
+//Show Project from visitor
+Route::get('/project/explore/{id}', [ProjectController::class, 'show']);
+
+//------------------------ Explore------------------------//
+Route::get('/designer/explore', [UserController::class, 'exploreDesigners']);
+Route::get('/project/explore', [ProjectController::class, 'show']);
 
 Route::get('/projects', [ProjectController::class, 'index']);
-
-Route::get('/profile', [UserController::class, 'profileView']);
+//------------------------ Profile------------------------//
+//Route::get('/profile', [UserController::class, 'profileView']);
 Route::get('/profile/setting', [UserController::class, 'settingView']);
-
+//Show Profile from visitor
+Route::get('/profile/{id}', [Controller::class, 'profile']);
+//------------------------ Skill------------------------//
 Route::get('/skill', [SkillController::class, 'create']);
 Route::post('/skill', [SkillController::class, 'store'])->name('skillAdd');
 Route::get('/skill/{id}', [SkillController::class, 'edit']);
@@ -56,9 +65,8 @@ Route::post('/skill/{id}', [SkillController::class, 'update']);
 Route::get('/skill/remove/{id}', [SkillController::class, 'destroy']);
 
 Route::get('/skills', [SkillController::class, 'index']);
+//------------------------ Bid------------------------//
 
-Route::get('/profile/{id}', [Controller::class, 'profile']);
-Route::get('/project/explore/{id}', [ProjectController::class, 'show']);
 Route::get('/bid/{id}', [ProjectController::class, 'bid']);
 Route::post('/bid', [ProjectController::class, 'bidding'])->name('bidding');
 Route::get('/bids', [ProjectController::class, 'bids']);
