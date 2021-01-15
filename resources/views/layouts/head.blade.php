@@ -9,5 +9,27 @@
 ================================================== -->
 <link rel="stylesheet" href="{{ asset('newStyle/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('newStyle/css/colors/purple.css') }}">
+<style>
+    .pagination li span, .pagination ul li a {
+        font-size: 18px;
+        width: 12px;
+        height: 11px;
+        line-height: 0;
+        padding: 5px;
+    }
 
+    .pagination ul li a:hover {
+        background-color: transparent;
+        color: purple;
+        box-shadow: none;
+    }
+
+    .pagination ul li a:last-child {
+        padding-right: 15px;
+    }
+
+    .pagination ul {
+        margin-top: 15px;
+    }
+</style>
 @yield('css')

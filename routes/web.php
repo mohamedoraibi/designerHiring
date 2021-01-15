@@ -51,6 +51,9 @@ Route::get('/profile/setting', [UserController::class, 'settingView']);
 
 Route::get('/skill', [SkillController::class, 'create']);
 Route::post('/skill', [SkillController::class, 'store'])->name('skillAdd');
+Route::get('/skill/{id}', [SkillController::class, 'edit']);
+Route::post('/skill/{id}', [SkillController::class, 'update']);
+Route::get('/skill/remove/{id}', [SkillController::class, 'destroy']);
 
 Route::get('/skills', [SkillController::class, 'index']);
 

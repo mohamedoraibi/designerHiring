@@ -39,7 +39,15 @@
             @foreach($Skills as $Skill)
                 <tr>
                     <td>{{$Skill->name}}</td>
-                    <td><a href="">Edit</a> <a href="">Remove</a></td>
+                    <td>
+                        <a href="/skill/{{$Skill->id}}"
+                           title="Edit"
+                           data-tippy-placement="top"><i class="icon-feather-edit"></i></a>
+                        <a href="/skill/remove/{{$Skill->id}}"
+                           onclick="return confirm('Are you sure want to remove the project ({{$Skill->name}}?)')"
+                           title="Remove"
+                           data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                    </td>
                 </tr>
             @endforeach
         @else
@@ -167,7 +175,9 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#skills').DataTable();
+            $('#skills').DataTable({
+                "paging": false,
+            });
         });
     </script>
 @endsection

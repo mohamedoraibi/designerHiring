@@ -14,7 +14,7 @@ class ProjectController extends Controller
     public function index()
     {
         if (Auth::user()) {
-            $Projects = Project::orderby('created_at', 'DESC')->paginate(5);
+            $Projects = Project::where('user_id', Auth::user()->id)->orderby('created_at', 'DESC')->paginate(10);
 //            $ProjectsCount = Project::count();
 
 //        $posts = User::find(1)->project()->get();

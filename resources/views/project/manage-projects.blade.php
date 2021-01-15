@@ -1,9 +1,8 @@
 @extends('layouts.masterDashboard')
 @section('css')
     <style>
-
-
     </style>
+
 @endsection
 @section('title')
     Manage Projects
@@ -14,6 +13,7 @@
     active-submenu
 @endsection
 @section('content')
+
     <div class="col-xl-12">
         <div class="row">
             <a href="/project">
@@ -92,7 +92,6 @@
                                 <p>There are no data.</p>
                             </li>
                         @endif
-                        {{--                        {!! $Projects->render() !!}--}}
 
                     </ul>
                 </div>
@@ -100,9 +99,8 @@
         </div>
 
     </div>
-
     <div class="pagination">
-        {!! $Projects->render() !!}
+        {!! $Projects->links() !!}
     </div>
     <!-- Row / End -->
 @endsection
