@@ -59,7 +59,7 @@
                         </li>
                     </ul>
                     <ul data-submenu-title="Account">
-                        <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i>
+                        <li><a href="/profile/setting"><i class="icon-material-outline-settings"></i>
                                 Settings</a></li>
                         <li><a href="index-logged-out.html">
                                 <form id="logout-form" action="{{ url('logout') }}" method="POST">

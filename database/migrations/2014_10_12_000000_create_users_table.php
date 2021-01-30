@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->date('birth')->nullable();
             $table->string('company')->nullable();
             $table->longText('bio')->nullable();
+            $table->longText('title')->nullable();
             $table->string('username')->nullable();
             $table->boolean('is_designer')->nullable();
             $table->boolean('is_project_owner')->nullable();

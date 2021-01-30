@@ -25,7 +25,7 @@
                                 <h3>{{$Project->name}}</h3>
                                 <h5>About the Employer</h5>
                                 <ul>
-                                    <li><a href="single-company-profile.html"><i
+                                    <li><a href="#"><i
                                                 class="icon-material-outline-business"></i> Acue</a></li>
                                     <li>
                                         <div class="star-rating" data-rating="5.0"></div>
@@ -39,7 +39,7 @@
                         <div class="right-side">
                             <div class="salary-box">
                                 <div class="salary-type">Project Budget</div>
-                                <div class="salary-amount">{{$Project->budget}}</div>
+                                <div class="salary-amount">${{$Project->budget}}</div>
                             </div>
                         </div>
                     </div>

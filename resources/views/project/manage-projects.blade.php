@@ -49,8 +49,7 @@
 
                                             <!-- Details -->
                                             <div class="job-listing-description">
-                                                <h3 class="job-listing-title"><a href="#">{{$Project->name}}</a> <span
-                                                        class="dashboard-status-button yellow">Expiring</span></h3>
+                                                <h3 class="job-listing-title"><a href="#">{{$Project->name}}</a></h3>
 
                                                 <!-- Job Listing Footer -->
                                                 <div class="job-listing-footer">
@@ -67,15 +66,14 @@
 
                                     <!-- Task Details -->
                                     <ul class="dashboard-task-info">
-                                        <li><strong>3</strong><span>Bids</span></li>
-                                        <li><strong>$22</strong><span>Avg. Bid</span></li>
+                                        <li><strong>${{$Project->budget}}</strong><span>Budget</span></li>
                                     </ul>
 
                                     <!-- Buttons -->
                                     <div class="buttons-to-right always-visible">
                                         <a href="/bid/{{$Project->id}}" class="button ripple-effect"><i
                                                 class="icon-material-outline-supervisor-account"></i> Manage Bidders
-                                            <span class="button-info">3</span></a>
+                                        </a>
                                         <a href="/project/{{$Project->id}}"
                                            class="button gray ripple-effect ico"
                                            title="Edit"

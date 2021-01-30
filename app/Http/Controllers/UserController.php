@@ -156,8 +156,9 @@ class UserController extends Controller
 
     public function exploreDesigners()
     {
-        $User = User::get();
-        return view('authNew.register', compact('User'));
+        $users = User::orderBy('id', 'desc')->where('is_designer', '=', 1)->paginate(10);
+
+        return view('designer.explore', compact('users'));
     }
 
 }

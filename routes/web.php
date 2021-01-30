@@ -46,10 +46,11 @@ Route::post('/project/{id}', [ProjectController::class, 'update']);
 Route::get('/project/remove/{id}', [ProjectController::class, 'destroy']);
 //Show Project from visitor
 Route::get('/project/explore/{id}', [ProjectController::class, 'show']);
+//Route::get('/project/explore', [ProjectController::class, 'showExplore']);
 
 //------------------------ Explore------------------------//
-Route::get('/designer/explore', [UserController::class, 'exploreDesigners']);
-Route::get('/project/explore', [ProjectController::class, 'show']);
+Route::get('/explore/designers', [UserController::class, 'exploreDesigners']);
+Route::get('/explore/projects', [ProjectController::class, 'showExplore']);
 
 Route::get('/projects', [ProjectController::class, 'index']);
 //------------------------ Profile------------------------//

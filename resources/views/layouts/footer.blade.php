@@ -88,7 +88,7 @@
                     <div class="footer-links">
                         <h3>For Designers</h3>
                         <ul>
-                            <li><a href="#"><span>Browse Projects</span></a></li>
+                            <li><a href="/explore/projects"><span>Browse Projects</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     <div class="footer-links">
                         <h3>For Project Owners</h3>
                         <ul>
-                            <li><a href="#"><span>Explore Designers</span></a></li>
+                            <li><a href="/explore/designers"><span>Explore Designers</span></a></li>
                         </ul>
                     </div>
                 </div>

@@ -75,6 +75,16 @@ class ProjectController extends Controller
 
     }
 
+    public function showExplore()
+    {
+        if (Auth::user()) {
+            $projects = Project::orderby('created_at', 'DESC')->paginate(10);
+            return view('project.explore', compact('projects'));
+        } else {
+            return redirect('/login');
+        }
+    }
+
     public function edit($id)
     {
         if (Auth::user()) {
@@ -127,10 +137,13 @@ class ProjectController extends Controller
     public function bid($id)
     {
         if (Auth::user()) {
-            $Project = Project::find($id);
+            $project = Project::find($id);
+            $bids = Bidding::where('id_project', $id);
+            $bidCount = $bids->count();
+
 //        $Project->bids(1);
-//        dd($Project);
-            return view('project.manage-bidders', compact('Project'));
+//        dd($bids->find(1)->price);
+            return view('project.manage-bidders', compact('project', 'bids', 'bidCount'));
         } else {
             return redirect('/login');
         }
@@ -151,6 +164,7 @@ class ProjectController extends Controller
                 $data = $request->all();
                 $data['id_user_designer'] = $request->user()->id;
                 $data['id_user_project_owner'] = $request->id_project;
+                $data['id_id_project'] = $request->id_project;
 //        dd($data);
                 Bidding::create($data);
                 return redirect()->back()->with('success', 'Project Published successfully.');
@@ -165,10 +179,8 @@ class ProjectController extends Controller
     {
 
         if (Auth::user()) {
-            $Bidding = Bidding::where('id_user_designer', $request->user()->id)->get();
+            $Bidding = Bidding::where('id_user_designer', $request->user()->id)->orderby('created_at', 'DESC')->get();
             return view('project.show-bids', compact('Bidding'));
-
-
         } else {
             return redirect('/login');
         }

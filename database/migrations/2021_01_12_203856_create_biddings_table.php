@@ -17,8 +17,9 @@ class CreateBiddingsTable extends Migration
             $table->id();
             $table->bigInteger('id_user_designer')->unsigned();
             $table->bigInteger('id_user_project_owner')->unsigned();
+            $table->bigInteger('id_project')->unsigned();
             $table->foreign('id_user_designer')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('id_user_project_owner')->references('id')->on('skills')->onDelete('cascade');
+            $table->foreign('id_user_project_owner')->references('id')->on('users')->onDelete('cascade');
             $table->bigInteger('price')->nullable();
             $table->bigInteger('days')->nullable();
             $table->boolean('status')->nullable();

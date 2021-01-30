@@ -12,6 +12,7 @@ class Bidding extends Model
     protected $fillable = [
         'id_user_designer',
         'id_user_project_owner',
+        'id_project',
         'price',
         'days',
         'status',

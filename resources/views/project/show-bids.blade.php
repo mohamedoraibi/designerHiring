@@ -49,16 +49,15 @@
 
                                             <!-- Details -->
                                             <div class="job-listing-description">
-                                                <h3 class="job-listing-title"><a href="#">{{$Bid->price}}
-                                                        - {{$Bid->notes}}</a> <span
-                                                        class="dashboard-status-button yellow">Expiring</span></h3>
+                                                <h3 class="job-listing-title"><a href="#">${{$Bid->price}}
+                                                        - Note:{{$Bid->notes}}</a></h3>
 
                                                 <!-- Job Listing Footer -->
                                                 <div class="job-listing-footer">
                                                     <ul>
                                                         <li>
                                                             {{--                                                            <i class="icon-material-outline-access-time"></i> {{$Bid->created_at->diffForHumans()}}--}}
-                                                            10 min left
+                                                            {{$Bid->created_at->diffForHumans()}}
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -67,12 +66,12 @@
                                     </div>
 
                                     <!-- Task Details -->
-                                    <ul class="dashboard-task-info">
-                                        <li><strong>3</strong><span>Bids</span></li>
-                                        <li><strong>$22</strong><span>Avg. Bid</span></li>
-                                    </ul>
+                                {{--                                    <ul class="dashboard-task-info">--}}
+                                {{--                                        <li><strong>3</strong><span>Bids</span></li>--}}
+                                {{--                                        <li><strong>$22</strong><span>Avg. Bid</span></li>--}}
+                                {{--                                    </ul>--}}
 
-                                    <!-- Buttons -->
+                                <!-- Buttons -->
                                     <div class="buttons-to-right always-visible">
                                         {{--                                        <a href="/bid/{{$Bid->id}}" class="button ripple-effect"><i--}}
                                         {{--                                                class="icon-material-outline-supervisor-account"></i> Manage Bidders--}}

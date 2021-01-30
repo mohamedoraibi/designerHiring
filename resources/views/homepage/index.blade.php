@@ -233,7 +233,7 @@
 
                         <!-- Section Headline -->
                         <div class="section-headline margin-top-0 margin-bottom-35">
-                            <h3>Featured Projects</h3>
+                            <h3>Latest Projects</h3>
                             <a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Projects</a>
                         </div>
 
@@ -310,7 +310,7 @@
                     <div class="col-xl-12">
                         <!-- Section Headline -->
                         <div class="section-headline margin-top-0 margin-bottom-25">
-                            <h3>Highest Rated Designers</h3>
+                            <h3>Latest Designers</h3>
                             <a href="freelancers-grid-layout.html" class="headline-link">Browse All Designers</a>
                         </div>
                     </div>
