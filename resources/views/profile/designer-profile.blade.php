@@ -6,7 +6,7 @@
     </style>
 @endsection
 @section('title')
-    Profile
+    {{$User->name}} | Designer
 @endsection
 {{--@section('titlebar')--}}
 {{--@endsection--}}
@@ -53,14 +53,7 @@
                 <!-- Page Content -->
                 <div class="single-page-section">
                     <h3 class="margin-bottom-25">About Me</h3>
-                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
-                        approaches to corporate strategy foster collaborative thinking to further the overall value
-                        proposition. Organically grow the holistic world view of disruptive innovation via workplace
-                        diversity and empowerment.</p>
-
-                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
-                        Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
-                        along the information highway will close the loop on focusing solely on the bottom line.</p>
+                    <p>{{$User->bio}}</p>
                 </div>
 
 
@@ -327,77 +320,97 @@
 
                     <!-- Welcome Text -->
                     <div class="welcome-text">
-                        <h3>Discuss your project with David</h3>
+                        <h3>Discuss your project with {{$User->name}}</h3>
                     </div>
 
                     <!-- Form -->
-                    <div class="content with-padding padding-bottom-10 ">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="submit-field">
-                                    <h5>Project Name</h5>
-                                    <input type="text" class="with-border" placeholder="e.g. build me a website">
-                                </div>
+                    <form method="POST" action="{{ route('offer') }}" id="bid-form" class="bidding-inner">
+                        @csrf
+                        @if ($errors->any())
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <i class="mdi mdi-block-helper mr-2"></i>
+                                <ul>
+                                    <div class="notification error closeable">
+                                        <strong>Whoops!</strong> There is a problem with the input.<br><br>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                        <a class="close"></a>
+                                    </div>
+                                </ul>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="submit-field">
-                                    <h5>Budget</h5>
-                                    <div class="input-with-icon">
-                                        <input class="with-border" type="text" placeholder="e.g. 75$">
-                                        <i class="currency">USD</i>
+                        @endif
+                        <input type="hidden" name="id_user_designer" value=" {{$User->id}}">
+                        <div class="content with-padding padding-bottom-10 ">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="submit-field">
+                                        <h5>Project Name</h5>
+                                        <input type="text" name="name" id="name" class="with-border"
+                                               placeholder="e.g. build me a website">
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-xl-6">
-                                <div class="submit-field">
-                                    <h5>Deadline </h5>
-                                    <div class="">
-                                        <div id="autocomplete-container">
-                                            <input id="autocomplete-input" class="with-border" type="date"
-                                                   placeholder="Anywhere">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="submit-field">
+                                        <h5>Budget</h5>
+                                        <div class="input-with-icon">
+                                            <input class="with-border" id="price" name="price" type="number"
+                                                   placeholder="e.g. 75$">
+                                            <i class="currency">USD</i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <div class="submit-field">
+                                        <h5>Deadline </h5>
+                                        <div class="">
+                                            <div id="autocomplete-container">
+                                                <input id="days" name="days" class="with-border" type="number"
+                                                       placeholder="30 Days">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="submit-field">
-                                    <h5>What skills are required? <i class="help-icon" data-tippy-placement="right"
-                                                                     title="Up to 5 skills that best describe your project"></i>
-                                    </h5>
-                                    <div class="keywords-container">
-                                        <div class="keyword-input-container">
-                                            <input type="text" class="keyword-input with-border"
-                                                   placeholder="Add Skills"/>
-                                            <button class="keyword-input-button ripple-effect"><i
-                                                    class="icon-material-outline-add"></i></button>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="submit-field">
+                                        <h5>What skills are required? <i class="help-icon" data-tippy-placement="right"
+                                                                         title="Up to 5 skills that best describe your project"></i>
+                                        </h5>
+                                        <div class="keywords-container">
+                                            <div class="keyword-input-container">
+                                                <input type="text" class="keyword-input with-border"
+                                                       placeholder="Add Skills"/>
+                                                <button class="keyword-input-button ripple-effect"><i
+                                                        class="icon-material-outline-add"></i></button>
+                                            </div>
+                                            <div class="keywords-list"><!-- keywords go here --></div>
+                                            <div class="clearfix"></div>
                                         </div>
-                                        <div class="keywords-list"><!-- keywords go here --></div>
-                                        <div class="clearfix"></div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-xl-12">
-                            <div class="submit-field">
-                                <h5>Describe Your Project</h5>
-                                <textarea cols="30" rows="5" class="with-border"></textarea>
+                            <div class="col-xl-12">
+                                <div class="submit-field">
+                                    <h5>Describe Your Project</h5>
+                                    <textarea cols="30" id="desc" rows="5" name="desc" class="with-border"></textarea>
+                                </div>
                             </div>
+
                         </div>
 
-                    </div>
-
-                    <!-- Button -->
-                    <button class="button full-width button-sliding-icon ripple-effect" type="submit">Make an Offer <i
-                            class="icon-material-outline-arrow-right-alt"></i></button>
-
+                        <!-- Button -->
+                        <button class="button full-width button-sliding-icon ripple-effect" type="submit">Make an Offer
+                            <i
+                                class="icon-material-outline-arrow-right-alt"></i></button>
+                    </form>
                 </div>
             </div>
         </div>

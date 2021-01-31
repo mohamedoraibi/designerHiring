@@ -1,14 +1,71 @@
 @extends('layouts.master')
 @section('css')
     <style>
-        .intro-benner1{
+        .intro-benner1 {
             display: flex;
             flex-direction: row-reverse;
         }
-        .intro-benner-img{
+
+        .intro-benner-img {
             margin-top: 20px;
             width: 100%;
             height: 82%;
+        }
+
+        .cat-1, .cat-2, .cat-3, .cat-4, .cat-5, .cat-6, .cat-7, .cat-8 {
+            position: relative;
+        }
+
+        .cat-1::before, .cat-2::before, .cat-3::before, .cat-4::before, .cat-5::before, .cat-6::before, .cat-7::before, .cat-8::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("{{ asset('newStyle/images/categories/webdesign.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            filter: brightness(0.6);
+        }
+
+        .cat-2::before {
+            background-image: url("{{ asset('newStyle/images/categories/graphic.jpg') }}");
+
+        }
+
+        .cat-3::before {
+            background-image: url("{{ asset('newStyle/images/categories/animation.jpg') }}");
+
+        }
+
+        .cat-4::before {
+            background-image: url("{{ asset('newStyle/images/categories/interior.jpg') }}");
+
+        }
+
+        .cat-5::before {
+            background-image: url("{{ asset('newStyle/images/categories/motion.jpg') }}");
+        }
+
+        .cat-6::before {
+            background-image: url("{{ asset('newStyle/images/categories/brand.png') }}");
+        }
+
+        .cat-7::before {
+            background-image: url("{{ asset('newStyle/images/categories/uiux.jpg') }}");
+        }
+
+        .cat-8::before {
+            background-image: url("{{ asset('newStyle/images/categories/archi.jpg') }}");
+        }
+
+        .module-inside {
+            position: relative;
+        }
+
+        .category-box-content > h3, .category-box-counter, .category-box-icon > i {
+            color: white;
         }
     </style>
     <!-- {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">--}} -->
@@ -56,15 +113,18 @@
 
                                     <!-- Search Field -->
                                     <div class="intro-search-field">
-                                        <label for="intro-keywords" class="field-title ripple-effect">What are you looking
+                                        <label for="intro-keywords" class="field-title ripple-effect">What are you
+                                            looking
                                             for?</label>
-                                        <input id="intro-keywords" type="text" placeholder="Project Title or a Designer">
+                                        <input id="intro-keywords" type="text"
+                                               placeholder="Project Title or a Designer">
                                     </div>
 
                                     <!-- Button -->
                                     <div class="intro-search-button">
                                         <button class="button ripple-effect"
-                                                onclick="window.location.href='jobs-list-layout-full-page-map.html'">Search
+                                                onclick="window.location.href='jobs-list-layout-full-page-map.html'">
+                                            Search
                                         </button>
                                     </div>
                                 </div>
@@ -90,8 +150,9 @@
                     </div>
                 </div>
 
-                <div class="col-xl-6" >
-                    <img class="intro-benner-img" src="{{ asset('newStyle/images/samples/undraw_winter_designer_a2m7.svg') }}" alt="">
+                <div class="col-xl-6">
+                    <img class="intro-benner-img"
+                         src="{{ asset('newStyle/images/samples/undraw_winter_designer_a2m7.svg') }}" alt="">
                 </div>
             </div>
         </div>
@@ -114,102 +175,94 @@
                     <div class="categories-container">
 
                         <!-- Category Box -->
-                        <a href="jobs-grid-layout-full-page.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-file-code-o"></i>
-                            </div>
-                            <div class="category-box-counter">612</div>
-                            <div class="category-box-content">
-                                <h3>Web Designer</h3>
-                                <p>CMS, eCommerce, HTML5, JavaScript & More</p>
-                            </div>
-                        </a>
-
-                        <!-- Category Box -->
-                        <a href="jobs-list-layout-full-page-map.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-cloud-upload"></i>
-                            </div>
-                            <div class="category-box-counter">113</div>
-                            <div class="category-box-content">
-                                <h3>Graphic Designer</h3>
-                                <p>Logos, Brochures, Leaflets, Business Cards, Invitations, Packaging & More</p>
+                        <a href="/explore/projects" class="category-box cat-1 ">
+                            <div class="module-inside">
+                                {{--                                <div class="category-box-icon">--}}
+                                {{--                                    <i class="icon-line-awesome-file-code-o"></i>--}}
+                                {{--                                </div>--}}
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Web Designer</h3>
+                                    <br>
+                                    {{--                                <p>CMS, eCommerce, HTML5, JavaScript & More</p>--}}
+                                </div>
                             </div>
                         </a>
 
                         <!-- Category Box -->
-                        <a href="jobs-list-layout-full-page-map.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-suitcase"></i>
-                            </div>
-                            <div class="category-box-counter">186</div>
-                            <div class="category-box-content">
-                                <h3>Animation Designer</h3>
-                                <p>Maya, 3ds Max, Cinema 4D, Blender, Photoshop, Flash, and After Effects & More</p>
-                            </div>
-                        </a>
-
-                        <!-- Category Box -->
-                        <a href="jobs-list-layout-1.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-pencil"></i>
-                            </div>
-                            <div class="category-box-counter">298</div>
-                            <div class="category-box-content">
-                                <h3>Interior Designer</h3>
-                                <p>Designs the various aspects of a house/office/building, preferably according to the
-                                    behaviour of the people who are supposed to use these spaces & More</p>
+                        <a href="/explore/projects" class="category-box cat-2">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Graphic Designer</h3>
+                                    <br>
+                                </div>
                             </div>
                         </a>
 
                         <!-- Category Box -->
-                        <a href="jobs-list-layout-2.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-pie-chart"></i>
-                            </div>
-                            <div class="category-box-counter">549</div>
-                            <div class="category-box-content">
-                                <h3>Motion Graphics Designer</h3>
-                                <p>Animated Graphics, Animated Presentations, Storyboards, Product Demo, Movie Title
-                                    Sequence & More</p>
+                        <a href="/explore/projects" class="category-box cat-3">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Animation Designer</h3>
+                                    <br>
+                                </div>
                             </div>
                         </a>
 
                         <!-- Category Box -->
-                        <a href="jobs-list-layout-1.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-image"></i>
-                            </div>
-                            <div class="category-box-counter">873</div>
-                            <div class="category-box-content">
-                                <h3>Graphics & Design</h3>
-                                <p>Creative Director, Web Designer & More</p>
-                            </div>
-                        </a>
-
-                        <!-- Category Box -->
-                        <a href="jobs-list-layout-2.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-bullhorn"></i>
-                            </div>
-                            <div class="category-box-counter">125</div>
-                            <div class="category-box-content">
-                                <h3>UI/UX Designer</h3>
-                                <p>UI:Creates interfaces for mobile applications and other software programs. <br> UX:
-                                    Responsible for creating user experiences by improving the design and usability of
-                                    the interaction between the user and the product.</p>
+                        <a href="/explore/projects" class="category-box cat-4">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Interior Designer</h3>
+                                    <br>
+                                </div>
                             </div>
                         </a>
 
                         <!-- Category Box -->
-                        <a href="jobs-grid-layout-full-page.html" class="category-box">
-                            <div class="category-box-icon">
-                                <i class="icon-line-awesome-graduation-cap"></i>
+                        <a href="/explore/projects" class="category-box cat-5">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Motion Graphics Designer</h3>
+                                    <br>
+                                </div>
                             </div>
-                            <div class="category-box-counter">445</div>
-                            <div class="category-box-content">
-                                <h3>Architectural Designer</h3>
-                                <p>Creates Plans for Buildings, Houses, and other places</p>
+                        </a>
+
+                        <!-- Category Box -->
+                        <a href="/explore/projects" class="category-box cat-6">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Branding Designer</h3>
+                                    <br>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Category Box -->
+                        <a href="/explore/projects" class="category-box cat-7">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>UI/UX Designer</h3>
+                                    <br>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Category Box -->
+                        <a href="/explore/projects" class="category-box cat-8">
+                            <div class="module-inside">
+                                <div class="category-box-content">
+                                    <br>
+                                    <h3>Architectural Designer</h3>
+                                    <br>
+                                </div>
                             </div>
                         </a>
 
@@ -234,14 +287,14 @@
                         <!-- Section Headline -->
                         <div class="section-headline margin-top-0 margin-bottom-35">
                             <h3>Latest Projects</h3>
-                            <a href="jobs-list-layout-full-page-map.html" class="headline-link">Browse All Projects</a>
+                            <a href="/explore/projects" class="headline-link">Browse All Projects</a>
                         </div>
 
                         <!-- Jobs Container -->
                         <div class="listings-container compact-list-layout margin-top-35">
                         @foreach($projects as $project)
                             <!-- Job Listing -->
-                                <a href="single-job-page.html" class="job-listing with-apply-button">
+                                <a href="/project/explore/{{$project->id}}" class="job-listing with-apply-button">
 
                                     <!-- Job Listing Details -->
                                     <div class="job-listing-details"
@@ -311,7 +364,7 @@
                         <!-- Section Headline -->
                         <div class="section-headline margin-top-0 margin-bottom-25">
                             <h3>Latest Designers</h3>
-                            <a href="freelancers-grid-layout.html" class="headline-link">Browse All Designers</a>
+                            <a href="/explore/designers" class="headline-link">Browse All Designers</a>
                         </div>
                     </div>
 
@@ -332,7 +385,7 @@
                                             <!-- Avatar -->
                                             <div class="freelancer-avatar">
                                                 <div class="verified-badge"></div>
-                                                <a href="single-freelancer-profile.html"><img
+                                                <a href="/profile/{{$designer->id}}"><img
                                                         src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}"
                                                         alt=""></a>
                                             </div>
@@ -353,7 +406,7 @@
 
                                     <!-- Details -->
                                     <div class="freelancer-details">
-                                        <a href="single-freelancer-profile.html"
+                                        <a href="/profile/{{$designer->id}}"
                                            class="button button-sliding-icon ripple-effect">View Profile <i
                                                 class="icon-material-outline-arrow-right-alt"></i></a>
                                     </div>

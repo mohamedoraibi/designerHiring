@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\OfferController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SkillController;
 use App\Http\Controllers\UserController;
@@ -73,6 +74,9 @@ Route::post('/bid', [ProjectController::class, 'bidding'])->name('bidding');
 Route::get('/bids', [ProjectController::class, 'bids']);
 Route::get('/bid/remove/{id}', [ProjectController::class, 'destroyBid']);
 
+//------------------------ Bid------------------------//
+Route::post('/offer', [OfferController::class, 'store'])->name('offer');
+Route::get('/offers', [OfferController::class, 'index']);
 
 
 //Route::post('/tag', [Controller::class, 'tag']);

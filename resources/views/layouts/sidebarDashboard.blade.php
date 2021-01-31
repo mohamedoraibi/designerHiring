@@ -21,11 +21,11 @@
                     <ul data-submenu-title="Start">
                         <li class="@yield('Dashboard')"><a href="/dashboard"><i
                                     class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-                        <li><a href="dashboard-messages.html"><i class="icon-material-outline-question-answer"></i>
-                                Messages <span class="nav-tag">2</span></a></li>
-                        <li><a href="dashboard-bookmarks.html"><i class="icon-material-outline-star-border"></i>
+                        <li><a href="#"><i class="icon-material-outline-question-answer"></i>
+                                Messages <span class="nav-tag">3</span></a></li>
+                        <li><a href="#"><i class="icon-material-outline-star-border"></i>
                                 Bookmarks</a></li>
-                        <li><a href="dashboard-reviews.html"><i class="icon-material-outline-rate-review"></i>
+                        <li><a href="#"><i class="icon-material-outline-rate-review"></i>
                                 Reviews</a></li>
                     </ul>
 
@@ -52,14 +52,15 @@
                             <ul>
                                 {{--                                <li><a href="dashboard-manage-tasks.html">Manage Tasks <span--}}
                                 {{--                                            class="nav-tag">2</span></a></li>--}}
-                                <li><a href="dashboard-manage-bidders.html">Manage Hiring</a></li>
+                                <li><a href="/offers">Manage Hiring</a></li>
                                 <li><a href="/bids">My Active Bids </a></li>
                                 {{--                                <li><a href="dashboard-post-a-task.html">Post a Task</a></li>--}}
                             </ul>
                         </li>
                     </ul>
                     <ul data-submenu-title="Account">
-                        <li><a href="/profile/setting"><i class="icon-material-outline-settings"></i>
+                        <li class="@yield('Setting')"><a href="/profile/setting"><i
+                                    class="icon-material-outline-settings"></i>
                                 Settings</a></li>
                         <li><a href="index-logged-out.html">
                                 <form id="logout-form" action="{{ url('logout') }}" method="POST">

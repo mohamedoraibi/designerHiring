@@ -21,7 +21,6 @@ class Controller extends BaseController
         $designers = User::orderBy('id', 'desc')->where('is_designer', '=', 1)->take(6)->get();
         $designersCount = User::where('is_designer', '=', 1)->count();
 
-//        return response($designers);
         return view('homepage.index', compact('projects', 'designers', 'projectsCount', 'designersCount'));
     }
 

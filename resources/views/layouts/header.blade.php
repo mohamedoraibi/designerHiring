@@ -237,9 +237,9 @@
                                 </div>
 
                                 <ul class="user-menu-small-nav">
-                                    <li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i>
+                                    <li><a href="/dashboard"><i class="icon-material-outline-dashboard"></i>
                                             Dashboard</a></li>
-                                    <li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i>
+                                    <li><a href="/profile/setting"><i class="icon-material-outline-settings"></i>
                                             Settings</a></li>
                                     <li>
                                         <a href="">
