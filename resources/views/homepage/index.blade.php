@@ -95,7 +95,7 @@
                             <div class="col-xl-12">
                                 <div class="banner-headline" style="max-width: 100%">
                                     <h3>
-                                        <strong>Hire designers or be hired, at any time!!</strong>
+                                        <strong>Hire designers or be hired, at any time!</strong>
                                         <br>
                                         <span>Thousands of business owners use <strong class="color">DesignChi</strong> to turn their ideas into reality.</span>
                                     </h3>
