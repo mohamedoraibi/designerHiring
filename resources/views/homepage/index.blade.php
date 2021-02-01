@@ -23,41 +23,41 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("{{ asset('newStyle/images/categories/webdesign.jpg') }}");
+            background-image: url("/newStyle/images/categories/webdesign.jpg");
             background-repeat: no-repeat;
             background-size: 100% 100%;
             filter: brightness(0.6);
         }
 
         .cat-2::before {
-            background-image: url("{{ asset('newStyle/images/categories/graphic.jpg') }}");
+            background-image: url("/newStyle/images/categories/graphic.jpg");
 
         }
 
         .cat-3::before {
-            background-image: url("{{ asset('newStyle/images/categories/animation.jpg') }}");
+            background-image: url("/newStyle/images/categories/animation.jpg");
 
         }
 
         .cat-4::before {
-            background-image: url("{{ asset('newStyle/images/categories/interior.jpg') }}");
+            background-image: url("/newStyle/images/categories/interior.jpg");
 
         }
 
         .cat-5::before {
-            background-image: url("{{ asset('newStyle/images/categories/motion.jpg') }}");
+            background-image: url("/newStyle/images/categories/motion.jpg");
         }
 
         .cat-6::before {
-            background-image: url("{{ asset('newStyle/images/categories/brand.png') }}");
+            background-image: url("/newStyle/images/categories/brand.png");
         }
 
         .cat-7::before {
-            background-image: url("{{ asset('newStyle/images/categories/uiux.jpg') }}");
+            background-image: url("/newStyle/images/categories/uiux.jpg");
         }
 
         .cat-8::before {
-            background-image: url("{{ asset('newStyle/images/categories/archi.jpg') }}");
+            background-image: url("/newStyle/images/categories/archi.jpg");
         }
 
         .module-inside {
@@ -152,7 +152,7 @@
 
                 <div class="col-xl-6">
                     <img class="intro-benner-img"
-                         src="{{ asset('newStyle/images/samples/undraw_winter_designer_a2m7.svg') }}" alt="">
+                         src="/newStyle/images/samples/undraw_winter_designer_a2m7.svg" alt="">
                 </div>
             </div>
         </div>
@@ -303,7 +303,7 @@
                                         <div style="display:flex; justify-content:space-between; align-items:center;">
                                             <!-- Logo -->
                                             <div class="job-listing-company-logo">
-                                                <img src="{{ asset('newStyle/images/company-logo-01.png') }}" alt="">
+                                                <img src="/newStyle/images/company-logo-01.png" alt="">
                                             </div>
 
                                             <!-- Details -->
@@ -386,7 +386,7 @@
                                             <div class="freelancer-avatar">
                                                 <div class="verified-badge"></div>
                                                 <a href="/profile/{{$designer->id}}"><img
-                                                        src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}"
+                                                        src="/newStyle/images/user-avatar-placeholder.png"
                                                         alt=""></a>
                                             </div>
 
