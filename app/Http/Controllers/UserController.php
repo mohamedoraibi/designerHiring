@@ -156,9 +156,14 @@ class UserController extends Controller
 
     public function exploreDesigners()
     {
-        $users = User::orderBy('id', 'desc')->where('is_designer', '=', 1)->paginate(10);
+        if (Auth::user()) {
+            $users = User::orderBy('id', 'desc')->where('is_designer', '=', 1)->paginate(10);
 
-        return view('designer.explore', compact('users'));
+            return view('designer.explore', compact('users'));
+        } else {
+            return redirect('/login');
+        }
+
     }
 
 }
