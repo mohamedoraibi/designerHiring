@@ -12,7 +12,7 @@
                 <!-- Logo -->
                 <div id="logo">
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('newStyle/images/logo.png') }}" alt="logo">
+                        <img src="/newStyle/images/logo.png" alt="logo">
                     </a>
                 </div>
 
@@ -145,7 +145,7 @@
                                             <li class="notifications-not-read">
                                                 <a href="dashboard-messages.html">
                                                     <span class="notification-avatar status-online"><img
-                                                            src="{{ asset('newStyle/images/user-avatar-small-03.jpg') }}"
+                                                            src="/newStyle/images/user-avatar-small-03.jpg"
                                                             alt=""></span>
                                                     <div class="notification-text">
                                                         <strong>David Peterson</strong>
@@ -160,7 +160,7 @@
                                             <li class="notifications-not-read">
                                                 <a href="dashboard-messages.html">
                                                     <span class="notification-avatar status-offline"><img
-                                                            src="{{ asset('newStyle/images/user-avatar-small-02.jpg') }}"
+                                                            src="/newStyle/images/user-avatar-small-02.jpg"
                                                             alt=""></span>
                                                     <div class="notification-text">
                                                         <strong>Sindy Forest</strong>
@@ -175,7 +175,7 @@
                                             <li class="notifications-not-read">
                                                 <a href="dashboard-messages.html">
                                                     <span class="notification-avatar status-online"><img
-                                                            src="{{ asset('newStyle/images/user-avatar-placeholder.png') }}"
+                                                            src="/newStyle/images/user-avatar-placeholder.png"
                                                             alt=""></span>
                                                     <div class="notification-text">
                                                         <strong>Marcin Kowalski</strong>
@@ -206,7 +206,7 @@
                             <div class="header-notifications-trigger">
                                 <a href="#">
                                     <div class="user-avatar status-online"><img
-                                            src="{{ asset('newStyle/images/user-avatar-small-01.jpg') }}"
+                                            src="/newStyle/images/user-avatar-small-01.jpg"
                                             alt=""></div>
                                 </a>
                             </div>
@@ -220,7 +220,7 @@
                                     <!-- User Name / Avatar -->
                                     <div class="user-details">
                                         <div class="user-avatar status-online"><img
-                                                src="{{ asset('newStyle/images/user-avatar-small-01.jpg') }}" alt="">
+                                                src="/newStyle/images/user-avatar-small-01.jpg" alt="">
                                         </div>
                                         <div class="user-name">
                                             {{ Auth::user()->name }} <span>Designer</span>
