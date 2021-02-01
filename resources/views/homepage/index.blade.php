@@ -153,6 +153,7 @@
                 <div class="col-xl-6">
                     <img class="intro-benner-img"
                          src="/newStyle/images/samples/undraw_winter_designer_a2m7.svg" alt="">
+
                 </div>
             </div>
         </div>
