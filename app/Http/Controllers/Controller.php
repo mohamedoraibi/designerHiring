@@ -9,6 +9,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Auth;
 
 class Controller extends BaseController
 {
@@ -26,17 +27,32 @@ class Controller extends BaseController
 
     public function aboutUs()
     {
-        return view('other.about-us');
+        if (Auth::user()) {
+            return view('other.about-us');
+
+        } else {
+            return redirect('/login');
+        }
     }
 
     public function contactUs()
     {
-        return view('other.contact-us');
+        if (Auth::user()) {
+            return view('other.contact-us');
+
+        } else {
+            return redirect('/login');
+        }
     }
 
     public function dashboard()
     {
-        return view('dashboard.dashboard');
+        if (Auth::user()) {
+            return view('dashboard.dashboard');
+        } else {
+            return redirect('/login');
+        }
+
     }
 
     public function tag(Request $request)
@@ -57,8 +73,13 @@ class Controller extends BaseController
 
     public function profile($id)
     {
-        $User = User::find($id);
-        return view('profile.designer-profile', compact('User'));
+        if (Auth::user()) {
+            $User = User::find($id);
+            return view('profile.designer-profile', compact('User'));
+        } else {
+            return redirect('/login');
+        }
+
     }
 
 
