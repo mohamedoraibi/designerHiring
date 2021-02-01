@@ -309,7 +309,7 @@
 
                                             <!-- Details -->
                                             <div class="row margin-left-20" style="align-items:center;">
-                                                <div class="job-listing-description col-xl-7">
+                                                <div class="job-listing-description col-xl-8">
                                                     <h3 class="job-listing-title">{{$project->name}}</h3>
 
                                                     <!-- Job Listing Footer -->
@@ -320,18 +320,18 @@
                                                                 <div class="verified-badge" title="Verified Employer"
                                                                      data-tippy-placement="top"></div>
                                                             </li>
-                                                            <li><i class="icon-material-outline-access-time"></i> 2 days
-                                                                ago
+                                                            <li>
+                                                                <i class="icon-material-outline-access-time"></i> {{$project->created_at->diffForHumans()}}
                                                             </li>
                                                         </ul>
                                                     </div>
                                                 </div>
-                                                <div class="task-tags col-xl-5">
-                                                    <span>iOS</span>
-                                                    <span>Android</span>
-                                                    <span>mobile apps</span>
-                                                    <span>design</span>
-                                                </div>
+                                                {{--                                                <div class="task-tags col-xl-5">--}}
+                                                {{--                                                    <span>iOS</span>--}}
+                                                {{--                                                    <span>Android</span>--}}
+                                                {{--                                                    <span>mobile apps</span>--}}
+                                                {{--                                                    <span>design</span>--}}
+                                                {{--                                                </div>--}}
                                             </div>
                                         </div>
 
