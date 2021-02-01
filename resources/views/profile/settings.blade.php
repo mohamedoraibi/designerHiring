@@ -121,7 +121,7 @@
 
                                 <div class="col-xl-6" style="text-align: center">
                                     <div class="row" style="padding-left: 50px">
-                                        <img src="{{ asset('newStyle/images/zaincash.png') }}" width="100px"
+                                        <img src="/newStyle/images/zaincash.png" width="100px"
                                              alt="zain-cash-logo">
                                     </div>
                                     <div class="row">
