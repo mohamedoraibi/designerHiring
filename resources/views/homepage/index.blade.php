@@ -152,7 +152,8 @@
 
                 <div class="col-xl-6">
                     <img class="intro-benner-img"
-                         src="/newStyle/images/samples/undraw_winter.png" alt="">
+                         src="/newStyle/images/samples/undraw_winter.png" alt="image">
+
                 </div>
             </div>
         </div>
