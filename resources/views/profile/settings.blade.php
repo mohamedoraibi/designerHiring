@@ -1,9 +1,9 @@
 @extends('layouts.masterDashboard')
 @section('css')
-    <style>
+{{--    <style>--}}
 
 
-    </style>
+{{--    </style>--}}
 @endsection
 @section('title')
     Settings
