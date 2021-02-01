@@ -28,7 +28,7 @@
     </script>
 
     <!-- Chart.js // documentation: http://www.chartjs.org/docs/latest/ -->
-    <script src="{{ asset('newStyle/js/chart.min.js') }}"></script>
+    <script src="/newStyle/js/chart.min.js"></script>
     <script>
         Chart.defaults.global.defaultFontFamily = "Nunito";
         Chart.defaults.global.defaultFontColor = '#888';

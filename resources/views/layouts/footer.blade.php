@@ -15,7 +15,7 @@
                         <div class="footer-rows-left">
                             <div class="footer-row">
                                 <div class="footer-row-inner footer-logo">
-                                    <img src="{{ asset('newStyle/images/logo.png') }}" alt="">
+                                    <img src="/newStyle/images/logo.png" alt="">
                                 </div>
                             </div>
                         </div>
