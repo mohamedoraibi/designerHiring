@@ -69,7 +69,7 @@
                                         <ul>
                                             <!-- Notification -->
                                             <li class="notifications-not-read">
-                                                <a href="dashboard-manage-candidates.html">
+                                                <a href="#">
                                                     <span class="notification-icon"><i
                                                             class="icon-material-outline-group"></i></span>
                                                     <span class="notification-text">
@@ -104,7 +104,7 @@
 
                                             <!-- Notification -->
                                             <li>
-                                                <a href="dashboard-manage-candidates.html">
+                                                <a href="#">
                                                     <span class="notification-icon"><i
                                                             class="icon-material-outline-group"></i></span>
                                                     <span class="notification-text">
@@ -143,7 +143,7 @@
                                         <ul>
                                             <!-- Notification -->
                                             <li class="notifications-not-read">
-                                                <a href="dashboard-messages.html">
+                                                <a href="#">
                                                     <span class="notification-avatar status-online"><img
                                                             src="/newStyle/images/user-avatar-small-03.jpg"
                                                             alt=""></span>
@@ -158,7 +158,7 @@
 
                                             <!-- Notification -->
                                             <li class="notifications-not-read">
-                                                <a href="dashboard-messages.html">
+                                                <a href="#">
                                                     <span class="notification-avatar status-offline"><img
                                                             src="/newStyle/images/user-avatar-small-02.jpg"
                                                             alt=""></span>
@@ -173,7 +173,7 @@
 
                                             <!-- Notification -->
                                             <li class="notifications-not-read">
-                                                <a href="dashboard-messages.html">
+                                                <a href="#">
                                                     <span class="notification-avatar status-online"><img
                                                             src="/newStyle/images/user-avatar-placeholder.png"
                                                             alt=""></span>
@@ -189,7 +189,7 @@
                                     </div>
                                 </div>
 
-                                <a href="dashboard-messages.html"
+                                <a href="#"
                                    class="header-notifications-button ripple-effect button-sliding-icon">View All
                                     Messages<i class="icon-material-outline-arrow-right-alt"></i></a>
                             </div>
