@@ -74,6 +74,9 @@
 @section('title')
     DesignChi
 @endsection
+@section('Home')
+    current
+@endsection
 @section('content')
     <!-- {{--    <form action="/tag" method="POST">--}}
     {{--        <input type="text" name="tag" value="html,input,tag" data-role="tagsinput">--}}

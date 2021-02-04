@@ -10,6 +10,9 @@
 @endsection
 @section('titlebar')
 @endsection
+@section('Projects')
+    current
+@endsection
 @section('content')
     <div class="container">
         <div class="col-xl-12 col-lg-8 content-left-offset">

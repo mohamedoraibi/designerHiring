@@ -20,10 +20,10 @@
                 <nav id="navigation">
                     <ul id="responsive">
 
-                        <li><a href="{{ url('/') }}" class="current">Home</a></li>
-                        <li><a href="/dashboard">Dashboard</a></li>
-                        <li><a href="/explore/projects">Projects</a></li>
-                        <li><a href="/explore/designers">Designers</a></li>
+                        <li><a href="{{ url('/') }}" class="@yield('Home')">Home</a></li>
+                        <li><a class="@yield('Dashboard-nav')" href="/dashboard">Dashboard</a></li>
+                        <li><a class="@yield('Projects')" href="/explore/projects">Projects</a></li>
+                        <li><a class="@yield('Designers')" href="/explore/designers">Designers</a></li>
                     </ul>
                 </nav>
                 <div class="clearfix"></div>

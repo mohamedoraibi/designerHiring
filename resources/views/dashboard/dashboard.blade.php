@@ -11,6 +11,9 @@
 @section('Dashboard')
     active-submenu
 @endsection
+@section('Dashboard-nav')
+    current
+@endsection
 @section('additionalJS')
     <script>
         // Snackbar for user status switcher
