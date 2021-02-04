@@ -140,6 +140,44 @@
                 </div>
             </div>
 
+            <div class="col-xl-12">
+            <div class="dashboard-box ">
+            <!-- Headline -->
+                <div class="headline">
+                    <h3><i class="icon-material-outline-crop-original
+"></i> Gallery</h3>
+                </div>
+
+                <div class="content with-padding padding-bottom-0">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="submit-field">
+                                        <h5>Images</h5>
+                                        <p>4</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-6" style="text-align: center">
+                                    <div class="row">
+                                        <div class="submit-field">
+                                            <p>Want to add a photo to the gallery?</p>
+                                            <a href="#" class="button ripple-effect big margin-top-30">+upload</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
             <!-- Dashboard Box -->
             <div class="col-xl-12">
                 <div class="dashboard-box">
