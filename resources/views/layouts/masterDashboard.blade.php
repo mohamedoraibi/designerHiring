@@ -44,6 +44,7 @@
 @include('layouts.loginAndRegisterModal')
 
 @include('layouts.footerJS')
+@include('layouts.notification')
 
 </body>
 </html>

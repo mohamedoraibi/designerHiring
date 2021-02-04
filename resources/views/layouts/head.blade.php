@@ -9,6 +9,7 @@
 ================================================== -->
 <link rel="stylesheet" href="/newStyle/css/style.css">
 <link rel="stylesheet" href="/newStyle/css/colors/purple.css">
+
 <style>
     .pagination li span, .pagination ul li a {
         font-size: 18px;

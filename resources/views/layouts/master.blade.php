@@ -47,6 +47,6 @@
 @include('layouts.footer')
 
 @include('layouts.footerJS')
-
+@include('layouts.notification')
 </body>
 </html>
