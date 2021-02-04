@@ -1,3 +1,6 @@
+@section('Dashboard-nav')
+    current
+@endsection
 <!-- Dashboard Sidebar
         ================================================== -->
 <div class="dashboard-sidebar">

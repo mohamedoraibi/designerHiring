@@ -120,10 +120,10 @@
                     <div class="footer-links">
                         <h3>Account</h3>
                         <ul>
-                            <li><a href="#"><span>Log In</span></a></li>
-                            <li><a href="#"><span>Register</span></a></li>
-                            <li><a href="#"><span>Dashboard</span></a></li>
-                            <li><a href="#"><span>Setting</span></a></li>
+                            <li><a href="/login"><span>Log In</span></a></li>
+                            <li><a href="/register"><span>Register</span></a></li>
+                            <li><a href="/dashboard"><span>Dashboard</span></a></li>
+                            <li><a href="/profile/setting"><span>Settings</span></a></li>
                         </ul>
                     </div>
                 </div>
