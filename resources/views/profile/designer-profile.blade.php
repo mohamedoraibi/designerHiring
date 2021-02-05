@@ -1,6 +1,20 @@
 @extends('layouts.master')
 @section('css')
     <style>
+        .paginationProfile {
+            width: 35px !important;
+            height: 50px !important;
+            padding: 0 !important;
+            line-height: 50px !important;
+        }
+
+        #paginationButtonLeft, #paginationButtonRight {
+            line-height: 35px !important;
+            font-size: 24px !important;
+            margin-left: 0 !important;
+            width: 34px !important;
+            height: 50px !important;
+        }
 
 
     </style>
@@ -109,13 +123,15 @@
                 <div class="pagination-container margin-top-20 margin-bottom-20">
                     <nav class="pagination">
                         <ul>
-                            <li class="pagination-arrow"><a href="#" class="ripple-effect"><i
+                            <li class="pagination-arrow "><a href="#" id="paginationButtonLeft"
+                                                             class="ripple-effect "><i
                                         class="icon-material-outline-keyboard-arrow-left"></i></a></li>
-                            <li><a href="#" class="ripple-effect current-page">1</a></li>
-                            <li><a href="#" class="ripple-effect">2</a></li>
-                            <li><a href="#" class="ripple-effect">3</a></li>
-                            <li><a href="#" class="ripple-effect">4</a></li>
-                            <li class="pagination-arrow"><a href="#" class="ripple-effect"><i
+                            <li><a href="#" class="paginationProfile ripple-effect current-page">1</a></li>
+                            <li><a href="#" class="ripple-effect paginationProfile">2</a></li>
+                            <li><a href="#" class="ripple-effect paginationProfile">3</a></li>
+                            <li><a href="#" class="ripple-effect paginationProfile">4</a></li>
+                            <li class="pagination-arrow "><a href="#" id="paginationButtonRight"
+                                                             class="ripple-effect paginationButton"><i
                                         class="icon-material-outline-keyboard-arrow-right"></i></a></li>
                         </ul>
                     </nav>
