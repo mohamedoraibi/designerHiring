@@ -6,7 +6,7 @@
     {{--    </style>--}}
 @endsection
 @section('title')
-    Messages
+    Reviews
 @endsection
 @section('Reviews')
     active-submenu

@@ -6,7 +6,7 @@
     {{--    </style>--}}
 @endsection
 @section('title')
-    Messages
+    Favorites
 @endsection
 @section('Favorite')
     active-submenu
