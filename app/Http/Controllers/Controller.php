@@ -128,4 +128,14 @@ class Controller extends BaseController
             return redirect('/login');
         }
     }
+
+    public function searchDesigner()
+    {
+        if (Auth::user()) {
+            $users = User::paginate(10);
+            return view('adminstration.users', compact('users'));
+        } else {
+            return redirect('/login');
+        }
+    }
 }

@@ -110,10 +110,6 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="intro-banner-search-form margin-top-95">
-
-                                    <!-- Search Field -->
-
-
                                     <!-- Search Field -->
                                     <div class="intro-search-field">
                                         <label for="intro-keywords" class="field-title ripple-effect">What are you
