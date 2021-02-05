@@ -74,10 +74,14 @@ Route::post('/bid', [ProjectController::class, 'bidding'])->name('bidding');
 Route::get('/bids', [ProjectController::class, 'bids']);
 Route::get('/bid/remove/{id}', [ProjectController::class, 'destroyBid']);
 
-//------------------------ Bid------------------------//
+//------------------------ Offers------------------------//
 Route::post('/offer', [OfferController::class, 'store'])->name('offer');
 Route::get('/offers', [OfferController::class, 'index']);
 
+//------------------------ Messages ------------------------//
+Route::get('/messages', [Controller::class, 'messages']);
+Route::get('/reviews', [Controller::class, 'reviews']);
+Route::get('/favorite', [Controller::class, 'favorite']);
 
 //Route::post('/tag', [Controller::class, 'tag']);
 

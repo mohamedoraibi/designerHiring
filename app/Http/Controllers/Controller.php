@@ -82,5 +82,31 @@ class Controller extends BaseController
 
     }
 
+    public function messages()
+    {
+        if (Auth::user()) {
+            return view('messages.messages');
+        } else {
+            return redirect('/login');
+        }
+    }
+
+    public function reviews()
+    {
+        if (Auth::user()) {
+            return view('reviews.reviews');
+        } else {
+            return redirect('/login');
+        }
+    }
+
+    public function favorite()
+    {
+        if (Auth::user()) {
+            return view('favorite.favorite');
+        } else {
+            return redirect('/login');
+        }
+    }
 
 }

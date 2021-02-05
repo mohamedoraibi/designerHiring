@@ -24,11 +24,14 @@
                     <ul data-submenu-title="Start">
                         <li class="@yield('Dashboard')"><a href="/dashboard"><i
                                     class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-                        <li><a href="#"><i class="icon-material-outline-question-answer"></i>
+                        <li class="@yield('Messages')"><a href="/messages"><i
+                                    class="icon-material-outline-question-answer"></i>
                                 Messages <span class="nav-tag">3</span></a></li>
-                        <li><a href="#"><i class="icon-material-outline-star-border"></i>
-                                Bookmarks</a></li>
-                        <li><a href="#"><i class="icon-material-outline-rate-review"></i>
+                        <li class="@yield('Favorite')"><a href="/favorite"><i
+                                    class="icon-material-outline-star-border"></i>
+                                Favorite</a></li>
+                        <li class="@yield('Reviews')"><a href="/reviews"><i
+                                    class="icon-material-outline-rate-review"></i>
                                 Reviews</a></li>
                     </ul>
 

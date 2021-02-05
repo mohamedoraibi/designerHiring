@@ -1,9 +1,9 @@
 @extends('layouts.masterDashboard')
 @section('css')
-{{--    <style>--}}
+    {{--    <style>--}}
 
 
-{{--    </style>--}}
+    {{--    </style>--}}
 @endsection
 @section('title')
     Settings
@@ -98,8 +98,6 @@
 
                 </div>
             </div>
-        </div>
-        <div class="col-xl-12">
             <div class="dashboard-box ">
 
                 <!-- Headline -->
@@ -140,12 +138,10 @@
                 </div>
             </div>
 
-            <div class="col-xl-12">
             <div class="dashboard-box ">
-            <!-- Headline -->
+                <!-- Headline -->
                 <div class="headline">
-                    <h3><i class="icon-material-outline-crop-original
-"></i> Gallery</h3>
+                    <h3><i class="icon-material-outline-crop-original"></i> Gallery</h3>
                 </div>
 
                 <div class="content with-padding padding-bottom-0">
@@ -177,114 +173,109 @@
                 </div>
             </div>
 
-
             <!-- Dashboard Box -->
-            <div class="col-xl-12">
-                <div class="dashboard-box">
+            <div class="dashboard-box">
 
-                    <!-- Headline -->
-                    <div class="headline">
-                        <h3><i class="icon-material-outline-face"></i> My Profile</h3>
-                    </div>
+                <!-- Headline -->
+                <div class="headline">
+                    <h3><i class="icon-material-outline-face"></i> My Profile</h3>
+                </div>
 
-                    <div class="content">
-                        <ul class="fields-ul">
-                            <li>
-                                <div class="row">
-                                    <div class="submit-field col-xl-6">
-                                        <h5>Skills <i class="help-icon" data-tippy-placement="right"
-                                                      title="Add up to 10 skills"></i></h5>
+                <div class="content">
+                    <ul class="fields-ul">
+                        <li>
+                            <div class="row">
+                                <div class="submit-field col-xl-6">
+                                    <h5>Skills <i class="help-icon" data-tippy-placement="right"
+                                                  title="Add up to 10 skills"></i></h5>
 
-                                        <!-- Skills List -->
-                                        <div class="keywords-container">
-                                            <div class="keyword-input-container">
-                                                <input type="text" class="keyword-input with-border"
-                                                       placeholder="e.g. Graphic Design, UI/UX"/>
-                                                <button class="keyword-input-button ripple-effect"><i
-                                                        class="icon-material-outline-add"></i></button>
-                                            </div>
+                                    <!-- Skills List -->
+                                    <div class="keywords-container">
+                                        <div class="keyword-input-container">
+                                            <input type="text" class="keyword-input with-border"
+                                                   placeholder="e.g. Graphic Design, UI/UX"/>
+                                            <button class="keyword-input-button ripple-effect"><i
+                                                    class="icon-material-outline-add"></i></button>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="keywords-list col-xl-4">
+                                <div class="keywords-list col-xl-4">
                                     <span class="keyword"><span class="keyword-remove"></span><span
                                             class="keyword-text">Angular</span></span>
-                                        <span class="keyword"><span class="keyword-remove"></span><span
-                                                class="keyword-text">Vue JS</span></span>
-                                        <span class="keyword"><span class="keyword-remove"></span><span
-                                                class="keyword-text">iOS</span></span>
-                                        <span class="keyword"><span class="keyword-remove"></span><span
-                                                class="keyword-text">Android</span></span>
-                                        <span class="keyword"><span class="keyword-remove"></span><span
-                                                class="keyword-text">Laravel</span></span>
-                                    </div>
-                                    <div class="clearfix"></div>
+                                    <span class="keyword"><span class="keyword-remove"></span><span
+                                            class="keyword-text">Vue JS</span></span>
+                                    <span class="keyword"><span class="keyword-remove"></span><span
+                                            class="keyword-text">iOS</span></span>
+                                    <span class="keyword"><span class="keyword-remove"></span><span
+                                            class="keyword-text">Android</span></span>
+                                    <span class="keyword"><span class="keyword-remove"></span><span
+                                            class="keyword-text">Laravel</span></span>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="submit-field">
-                                            <h5>Tagline</h5>
-                                            <input type="text" class="with-border" value="UI/UX Designer">
-                                        </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="submit-field">
+                                        <h5>Tagline</h5>
+                                        <input type="text" class="with-border" value="UI/UX Designer">
                                     </div>
-
-                                    <div class="col-xl-6">
-                                        <div class="submit-field">
-                                            <h5>Date of Birth:</h5>
-                                            <input type="date" class="input-text with-border"
-                                                   value="{{$User->birth}}" name="birth" id="birth"
-                                                   placeholder="Date of Birth" required/>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-12">
-                                        <div class="submit-field">
-                                            <h5>Introduce Yourself</h5>
-                                            <textarea cols="30" rows="5"
-                                                      class="with-border">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</textarea>
-                                        </div>
-                                    </div>
-
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+
+                                <div class="col-xl-6">
+                                    <div class="submit-field">
+                                        <h5>Date of Birth:</h5>
+                                        <input type="date" class="input-text with-border"
+                                               value="{{$User->birth}}" name="birth" id="birth"
+                                               placeholder="Date of Birth" required/>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12">
+                                    <div class="submit-field">
+                                        <h5>Introduce Yourself</h5>
+                                        <textarea cols="30" rows="5"
+                                                  class="with-border">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Dashboard Box -->
-            <div class="col-xl-12">
-                <div id="test1" class="dashboard-box">
+            <div id="test1" class="dashboard-box">
 
-                    <!-- Headline -->
-                    <div class="headline">
-                        <h3><i class="icon-material-outline-lock"></i> Password & Security</h3>
-                    </div>
+                <!-- Headline -->
+                <div class="headline">
+                    <h3><i class="icon-material-outline-lock"></i> Password & Security</h3>
+                </div>
 
-                    <div class="content with-padding">
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="submit-field">
-                                    <h5>Current Password</h5>
-                                    <input type="password" class="with-border">
-                                </div>
+                <div class="content with-padding">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="submit-field">
+                                <h5>Current Password</h5>
+                                <input type="password" class="with-border">
                             </div>
+                        </div>
 
-                            <div class="col-xl-4">
-                                <div class="submit-field">
-                                    <h5>New Password</h5>
-                                    <input type="password" class="with-border">
-                                </div>
+                        <div class="col-xl-4">
+                            <div class="submit-field">
+                                <h5>New Password</h5>
+                                <input type="password" class="with-border">
                             </div>
+                        </div>
 
-                            <div class="col-xl-4">
-                                <div class="submit-field">
-                                    <h5>Repeat New Password</h5>
-                                    <input type="password" class="with-border">
-                                </div>
+                        <div class="col-xl-4">
+                            <div class="submit-field">
+                                <h5>Repeat New Password</h5>
+                                <input type="password" class="with-border">
                             </div>
                         </div>
                     </div>
