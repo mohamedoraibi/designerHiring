@@ -83,6 +83,9 @@ Route::get('/messages', [Controller::class, 'messages']);
 Route::get('/reviews', [Controller::class, 'reviews']);
 Route::get('/favorite', [Controller::class, 'favorite']);
 
+//------------------------ Adminstation ------------------------//
+Route::get('/admin/projects', [Controller::class, 'showProjects']);
+Route::get('/admin/users', [Controller::class, 'showUsers']);
 //Route::post('/tag', [Controller::class, 'tag']);
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

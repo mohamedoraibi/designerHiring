@@ -15,6 +15,13 @@ class CreateMessagesTable extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('sender_user_id')->unsigned();
+            $table->bigInteger('receiver_user_id')->unsigned();
+            $table->boolean('read')->nullable();
+            $table->longText('message')->nullable();
+            $table->longText('attachment_path')->nullable();
+            $table->longText('device')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

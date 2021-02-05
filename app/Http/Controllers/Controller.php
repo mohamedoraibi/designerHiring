@@ -109,4 +109,23 @@ class Controller extends BaseController
         }
     }
 
+    public function showProjects()
+    {
+        if (Auth::user()) {
+            $projects = Project::paginate(10);
+            return view('adminstration.projects', compact('projects'));
+        } else {
+            return redirect('/login');
+        }
+    }
+
+    public function showUsers()
+    {
+        if (Auth::user()) {
+            $users = User::paginate(10);
+            return view('adminstration.users', compact('users'));
+        } else {
+            return redirect('/login');
+        }
+    }
 }

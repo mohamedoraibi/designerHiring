@@ -38,8 +38,10 @@
                     <ul data-submenu-title="Administration">
                         <li class="@yield('Skills')"><a href="/skills"><i class="icon-line-awesome-tasks"></i>
                                 Skills</a></li>
-                        <li><a href="/users"><i class="icon-line-awesome-user"></i> Users</a></li>
-                        <li><a href="/users"><i class="icon-material-outline-business-center"></i> Projects</a></li>
+                        <li class="@yield('adminUsers')"><a href="/admin/users"><i class="icon-line-awesome-user"></i>
+                                Users</a></li>
+                        <li class="@yield('adminProjects')"><a href="/admin/projects"><i
+                                    class="icon-material-outline-business-center"></i> Projects</a></li>
                     </ul>
                     <ul data-submenu-title="Management">
                         <li class="@yield('Projects')"><a href="#"><i class="icon-material-outline-business-center"></i>
@@ -71,7 +73,8 @@
                         <li><a href="index-logged-out.html">
                                 <form id="logout-form" action="{{ url('logout') }}" method="POST">
                                     {{ csrf_field() }}
-                                    <button class="dropdown-item bg-danger text-white" type="submit"><i
+                                    <button onclick="return confirm('Are you sure want to Sign out')"
+                                            class="dropdown-item bg-danger text-white" type="submit"><i
                                             class="icon-material-outline-power-settings-new"></i> Logout
                                     </button>
                                 </form>

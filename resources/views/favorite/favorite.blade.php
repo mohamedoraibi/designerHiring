@@ -22,7 +22,7 @@
 
                 <!-- Headline -->
                 <div class="headline">
-                    <h3><i class="icon-material-outline-business-center"></i> Bookmarked Jobs</h3>
+                    <h3><i class="icon-material-outline-business-center"></i> Favorite Projects</h3>
                 </div>
 
                 <div class="content">
@@ -147,7 +147,7 @@
 
                 <!-- Headline -->
                 <div class="headline">
-                    <h3><i class="icon-material-outline-face"></i> Bookmarked Freelancers</h3>
+                    <h3><i class="icon-material-outline-face"></i> Favorite Designers</h3>
                 </div>
 
                 <div class="content">

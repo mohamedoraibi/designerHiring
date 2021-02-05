@@ -245,7 +245,8 @@
                                         <a href="">
                                             <form id="logout-form" action="{{ url('logout') }}" method="POST">
                                                 {{ csrf_field() }}
-                                                <button class="dropdown-item bg-danger text-white" type="submit"><i
+                                                <button onclick="return confirm('Are you sure want to Sign out')"
+                                                        class="dropdown-item bg-danger text-white" type="submit"><i
                                                         class="icon-material-outline-power-settings-new"></i> Logout
                                                 </button>
                                             </form>
